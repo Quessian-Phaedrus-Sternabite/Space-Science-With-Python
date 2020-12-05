@@ -2,9 +2,9 @@ import spiceypy, numpy, scipy, matplotlib, jupyter, pandas, sympy, nose, IPython
 import datetime
 import math
 
-spiceypy.furnsh('C:/Users/kelle/OneDrive/Desktop/Python Files/Space sciene with python final/_kernels/lsk/naif0012.tls')
-spiceypy.furnsh('C:/Users/kelle/OneDrive/Desktop/Python Files/Space sciene with python final/_kernels/spk/de432s.bsp')
-spiceypy.furnsh('C:/Users/kelle/OneDrive/Desktop/Python Files/Space sciene with python final/_kernels/pck/gm_de431.tpc')
+spiceypy.furnsh('_kernels/lsk/naif0012.tls')
+spiceypy.furnsh('_kernels/spk/de432s.bsp')
+spiceypy.furnsh('_kernels/pck/gm_de431.tpc')
 
 # Get's date
 DATE_TODAY = datetime.datetime.today()
