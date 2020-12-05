@@ -85,3 +85,57 @@ AX.grid(axis='x', linestyle='dashed', alpha=0.5)
 
 #Save the figure in high quality
 plt.savefig('SSB2SUN_DISTANCE.png', dpi=300)
+
+#We're going to compute the position vectors of
+#the outer gas giants to see how it affects the SSB.
+#We define a dictionary with an abbreviation and NAIF ID code.
+NAIF_ID_DICT = {'JUB': 5, \
+                'SAT': 6, \
+                'URA': 7, \
+                'NEP': 8}
+
+# Iterate through the dictionary and compute the position vector for each
+# planet as seen from the Sun. Further, compute the phase angle between the
+# SSB and the planet as seen from the Sun
+for planets_name_key in NAIF_ID_DICT:
+
+    # Define the pandas dataframe column for each planet (position and phase
+    # angle). Each '%s' substring is replaced with the planets name as
+    # indicated after the "%"
+    planet_pos_col = 'POS_%s_WRT_SUN' % planets_name_key
+    planet_angle_col = 'PHASE_ANGLE_SUN_%s2SSB' % planets_name_key
+
+    #get the corresponding ID of the planet's barycentre
+    planet_id = NAIF_ID_DICT[planets_name_key]
+
+    #compute the planets position as seen from the sun
+    SOLAR_SYSTEM_DF.loc[:, planet_pos_col] = \
+        SOLAR_SYSTEM_DF['ET'].apply(lambda x: \
+                                    spiceypy.spkgps(targ=planet_id, \
+                                                    et=x, \
+                                                    ref='ECLIPJ2000', \
+                                                    obs=10)[0])
+
+    #Compute the phase angle between the SSB and the planet as seen from the Sun.
+    #Since we apply a lambda function on all columns
+    #we need to set axis=1 to avoid errors.
+    SOLAR_SYSTEM_DF.loc[:, planet_pos_col] = \
+        SOLAR_SYSTEM_DF.apply(lambda x: \
+                              np.degrees(spiceypy.vsep(x[planet_pos_col], \
+                                                       x['POS_SSB_WRT_SUN'])), \
+                                                        axis=1)
+
+    COMP_ANGLE = lambda vec1, vec2: np.arccos(np.dot(vec1, vec2) \
+                                              / (np.linalg.norm(vec1) \
+                                                 * np.linalg.norm(vec2)))
+
+    print('Phase angle between the SSB and Jupiter as seen from the Sun (first ' \
+      'array entry, lambda function): %s' % \
+      np.degrees(COMP_ANGLE(SOLAR_SYSTEM_DF['POS_SSB_WRT_SUN'].iloc[0], \
+                            SOLAR_SYSTEM_DF['POS_JUP_WRT_SUN'].iloc[0])))
+
+
+    print('Phase angle between the SSB and Jupiter as seen from the Sun (first ' \
+          'array entry, SPICE vsep function): %s' % \
+          np.degrees(spiceypy.vsep(SOLAR_SYSTEM_DF['POS_SSB_WRT_SUN'].iloc[0], \
+                                   SOLAR_SYSTEM_DF['POS_JUP_WRT_SUN'].iloc[0])))
