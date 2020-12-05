@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/SSB2SUN_DISTANCE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607145544846</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished VIS_SSB_INFLUENCES.py">
+      <created>1607145736231</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607145736231</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,30 +226,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="71" y="18" key="CommitChangelistDialog2" timestamp="1607145735755">
+    <state x="71" y="18" key="CommitChangelistDialog2" timestamp="1607149289250">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="71" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607145735755" />
+    <state x="71" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607149289250" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="745" height="271" key="GridCell.Tab.0.bottom" timestamp="1607145391477">
+    <state width="745" height="271" key="GridCell.Tab.0.bottom" timestamp="1607149246145">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="745" height="271" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
-    <state width="745" height="271" key="GridCell.Tab.0.center" timestamp="1607145391477">
+    <state width="745" height="271" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607149246145" />
+    <state width="745" height="271" key="GridCell.Tab.0.center" timestamp="1607149246145">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="745" height="271" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
-    <state width="745" height="271" key="GridCell.Tab.0.left" timestamp="1607145391477">
+    <state width="745" height="271" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607149246145" />
+    <state width="745" height="271" key="GridCell.Tab.0.left" timestamp="1607149246145">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="745" height="271" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
-    <state width="745" height="271" key="GridCell.Tab.0.right" timestamp="1607145391477">
+    <state width="745" height="271" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607149246145" />
+    <state width="745" height="271" key="GridCell.Tab.0.right" timestamp="1607149246145">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="745" height="271" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
+    <state width="745" height="271" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607149246145" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1606787907256">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
