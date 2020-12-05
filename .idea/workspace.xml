@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607152369309</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update: Made minor changes, continuing development on VIS_SSB_INFLUENCES.py, to be renamed later">
+      <created>1607198700087</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607198700087</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,30 +261,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="71" y="18" key="CommitChangelistDialog2" timestamp="1607152368833">
+    <state x="71" y="18" key="CommitChangelistDialog2" timestamp="1607198699591">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="71" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607152368833" />
+    <state x="71" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607198699591" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="747" height="278" key="GridCell.Tab.0.bottom" timestamp="1607198319381">
+    <state width="747" height="172" key="GridCell.Tab.0.bottom" timestamp="1607199643073">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="278" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607198319381" />
-    <state width="747" height="278" key="GridCell.Tab.0.center" timestamp="1607198319380">
+    <state width="747" height="172" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607199643073" />
+    <state width="747" height="172" key="GridCell.Tab.0.center" timestamp="1607199643073">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="278" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607198319380" />
-    <state width="747" height="278" key="GridCell.Tab.0.left" timestamp="1607198319380">
+    <state width="747" height="172" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607199643073" />
+    <state width="747" height="172" key="GridCell.Tab.0.left" timestamp="1607199643072">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="278" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607198319380" />
-    <state width="747" height="278" key="GridCell.Tab.0.right" timestamp="1607198319380">
+    <state width="747" height="172" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607199643072" />
+    <state width="747" height="172" key="GridCell.Tab.0.right" timestamp="1607199643073">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="278" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607198319380" />
+    <state width="747" height="172" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607199643073" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1606787907256">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -294,10 +301,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1607110641143" />
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607149302329">
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607199626341">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607149302329" />
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607199626341" />
     <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607145108282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
