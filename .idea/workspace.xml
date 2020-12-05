@@ -4,6 +4,7 @@
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/kernel_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/kernel_meta.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final\_kernels" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Keplars first law (1)">
+  <component name="RunManager" selected="Python.VIS_SSB_INFLUENCES">
     <configuration name="EARTH_SPEED_CALC" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,7 +128,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="The Ultimate Calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="VIS_SSB_INFLUENCES" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,11 +136,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Visualizing what affects the barycentre" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/The Ultimate Calculator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.VIS_SSB_INFLUENCES" />
         <item itemvalue="Python.Keplars first law (1)" />
         <item itemvalue="Python.Keplars first law" />
         <item itemvalue="Python.EARTH_SPEED_CALC" />
         <item itemvalue="Python.Space science with python" />
-        <item itemvalue="Python.The Ultimate Calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -190,42 +191,50 @@
       <option name="project" value="LOCAL" />
       <updated>1607134950729</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updating Barycentre influences">
+      <created>1607137895347</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607137895347</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Render of the plot" />
-    <option name="LAST_COMMIT_MESSAGE" value="Render of the plot" />
+    <MESSAGE value="Updating Barycentre influences" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating Barycentre influences" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="317" y="29" key="CommitChangelistDialog2" timestamp="1607134950241">
+    <state x="317" y="29" key="CommitChangelistDialog2" timestamp="1607137894820">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="317" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607134950241" />
+    <state x="317" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607137894820" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="747" height="128" key="GridCell.Tab.0.bottom" timestamp="1607134273546">
+    <state width="745" height="271" key="GridCell.Tab.0.bottom" timestamp="1607145391477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="128" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607134273546" />
-    <state width="747" height="128" key="GridCell.Tab.0.center" timestamp="1607134273546">
+    <state width="745" height="271" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
+    <state width="745" height="271" key="GridCell.Tab.0.center" timestamp="1607145391477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="128" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607134273546" />
-    <state width="747" height="128" key="GridCell.Tab.0.left" timestamp="1607134273546">
+    <state width="745" height="271" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
+    <state width="745" height="271" key="GridCell.Tab.0.left" timestamp="1607145391477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="128" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607134273546" />
-    <state width="747" height="128" key="GridCell.Tab.0.right" timestamp="1607134273546">
+    <state width="745" height="271" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
+    <state width="745" height="271" key="GridCell.Tab.0.right" timestamp="1607145391477">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="128" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607134273546" />
+    <state width="745" height="271" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607145391477" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1606787907256">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -242,13 +251,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1607110641143" />
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607137673728">
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607145438639">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607137673728" />
-    <state x="815" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607111415117">
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607145438639" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607145108282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="815" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607111415117" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607145108282" />
   </component>
 </project>
