@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/kernel_meta.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/kernel_meta.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,23 +196,31 @@
       <option name="project" value="LOCAL" />
       <updated>1607137895347</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finished VIS_SSB_INFLUENCES.py">
+      <created>1607145544846</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607145544846</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Render of the plot" />
     <MESSAGE value="Updating Barycentre influences" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating Barycentre influences" />
+    <MESSAGE value="Finished VIS_SSB_INFLUENCES.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished VIS_SSB_INFLUENCES.py" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="317" y="29" key="CommitChangelistDialog2" timestamp="1607137894820">
+    <state x="71" y="18" key="CommitChangelistDialog2" timestamp="1607145544361">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="317" y="29" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607137894820" />
+    <state x="71" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607145544361" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
