@@ -104,7 +104,7 @@ AX.plot(INNER_SOLSYS_DF['UTC'], INNER_SOLSYS_DF['EARTH_MOON2SUN_ANGLE'], \
         color='tab:gray', label='Moon - Sun')
 
 AX.plot(INNER_SOLSYS_DF['UTC'], INNER_SOLSYS_DF['EARTH_MOON2VEN_ANGLE'], \
-        color='tab:black', label='Moon - Venus')
+        color='black', label='Moon - Venus')
 
 #Set labels
 AX.set_xlabel('Date in UTC')
