@@ -189,3 +189,47 @@ for ax_f, planet_abr, planet_name in zip([AX1, AX2, AX3, AX4], \
     ax_f.plot(SOLAR_SYSTEM_DF['UTC'], \
               SOLAR_SYSTEM_DF['SSB_WRT_SUN_SCALED_DIST'], \
               color='tab=blue')
+
+    #A y label is set and color of labels and ticks are  adjusted for
+    #Better visibility
+    ax_f.set_ylabel('SSB Dist. in sun Radii', color='tab=blue')
+    ax_f.tick_params(axis='y', labelcolor='tab:blue')
+
+    #Set X (based on the min and max date) and y limits (The SSB has varying
+    #Distances between 0 and 2 Sun Radii).
+    ax_f.set_xlim(min(SOLAR_SYSTEM_DF['UTC']), max(SOLAR_SYSTEM_DF['UTC']))
+    ax_f.set_ylim(0, 2)
+
+    #Add the phase angle values and copy the x axis for this purpose.
+    ax_f_add = ax_f.twinx()
+
+    #Plot the Phase Angle between the SSB and Planet WRT the Sun
+    ax_f_add.plot(SOLAR_SYSTEM_DF['UTC'], \
+                  SOLAR_SYSTEM_DF['PHASE_ANGLE_SUN_%s2SSB' % planet_abr], \
+                  color='tab:orange', \
+                  linestyle='-')
+
+    #set the y label's name and colour accordingly
+    ax_f_add.set_ylabel('Planet ph. ang. in deg', color='tab:orange')
+    ax_f_add.tick_params(axis='y', labelcolor='tab:orange')
+
+    # Invert the y axis and set the limits. Invert the axis so that a
+    # possible anti-correlation (large phase angle corresponds to a smaller
+    # distance between the Sun's centre and the SSB) becomes more obvious
+    ax_f_add.invert_yaxis()
+    ax_f_add.set_ylim(180,0)
+
+    #Set a grid (only date)
+    ax_f.grid(axis='x', linestyle='dashed', alpha=0.5)
+
+#Finally, set the x label
+AX4.set_xlabel('Date In UTC')
+
+#... tight the figures a bit (make them closer to each other)
+FIG.tight_layout()
+
+#... Reduce the distance between the axes
+plt.subplots_adjust(hspace=0.2)
+
+#... and save the figure in high quality
+plt.savefig('PLANETS_SUN_SSB_PHASE_ANGLE.png', dpi=300)
