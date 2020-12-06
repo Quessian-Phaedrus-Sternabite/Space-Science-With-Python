@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" beforeDir="false" afterPath="$PROJECT_DIR$/Visualizing what affects the barycentre/VIS_SSB_INFLUENCES.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -281,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607235948512</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Debugged and it works!!!!&#10;View PLANETS_SUN_SSB_PHASE_ANGLE.png for results">
+      <created>1607236076618</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607236076618</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -293,7 +300,8 @@
     <MESSAGE value="Changed manual furnshing to meta kernel" />
     <MESSAGE value="Began adding subplots for planets." />
     <MESSAGE value="Finished adding subplots and subsequently VIS_SSB_INFLUENCES.py! Should work fine, about to test plot generation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished adding subplots and subsequently VIS_SSB_INFLUENCES.py! Should work fine, about to test plot generation." />
+    <MESSAGE value="Debugged and it works!!!!&#10;View PLANETS_SUN_SSB_PHASE_ANGLE.png for results" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debugged and it works!!!!&#10;View PLANETS_SUN_SSB_PHASE_ANGLE.png for results" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
