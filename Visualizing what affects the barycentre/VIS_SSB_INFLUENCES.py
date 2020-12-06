@@ -169,3 +169,14 @@ print('Phase angle between the SSB and Jupiter as seen from the Sun (first ' \
       'array entry, SPICE vsep function): %s' % \
       np.degrees(spiceypy.vsep(SOLAR_SYSTEM_DF['POS_SSB_WRT_SUN'].iloc[0], \
                                SOLAR_SYSTEM_DF['POS_JUP_WRT_SUN'].iloc[0])))
+
+# Create a 4 axes plot where all 4 plots are vertically aligned and share the
+# x axis (date in UTC)
+FIG, (AX1, AX2, AX3, AX4) = plt.subplots(4, 1, sharex=True, figsize=(8,20))
+
+# We iterate through the planets (from Jupiter to Neptune) and plot the
+# phase angle between the planet and the SSB, as seen from the Sun, in each
+# axis individually
+for ax_f, planet_abr, planet_name in zip([AX1, AX2, AX3, AX4], \
+                                         ['JUP', 'SAT', 'URA', 'NEP'], \
+                                         )
