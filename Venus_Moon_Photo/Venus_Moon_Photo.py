@@ -2,6 +2,8 @@ import datetime
 import spiceypy
 import numpy as np
 import pandas as pd
+from matplotlib import pyplot as plt
+import matplotlib.dates as matpl_dates
 
 #Load meta-kernel
 spiceypy.furnsh('kernel_meta.txt')
@@ -43,7 +45,7 @@ INNER_SOLSYS_DF.loc[:, 'UTC'] = \
 # We apply a correction that considers the movement of the planets and the
 # light time (LT+S)
 INNER_SOLSYS_DF.loc[:, 'EARTH_VEN2SUN_ANGLE'] = \
-    INNER_SOLSYS_DF['ET'].apply(lambda x: #
+    INNER_SOLSYS_DF['ET'].apply(lambda x: \
                                     np.degrees(spiceypy.phaseq(et=x, \
                                                                target='399', \
                                                                illmn='10', \
@@ -52,13 +54,14 @@ INNER_SOLSYS_DF.loc[:, 'EARTH_VEN2SUN_ANGLE'] = \
 
 #Compute the angle between the Moon and the sun. We apply the same
 #Function (phase1. The Moon NAIF ID is 301
-INNER_SOLSYS_DF[:, 'EARTH_MOON2SUN_ANGLE'] = \
+INNER_SOLSYS_DF.loc[:, 'EARTH_MOON2SUN_ANGLE'] = \
     INNER_SOLSYS_DF['ET'].apply(lambda x: \
                                     np.degrees(spiceypy.phaseq(et=x, \
                                                                target='399', \
                                                                illmn='10', \
                                                                obsrvr='301', \
                                                                abcorr='LT+S')))
+
 #COmpute finally the phase angle between the Moon and Venus
 INNER_SOLSYS_DF.loc[:, 'EARTH_MOON2VEN_ANGLE'] = \
     INNER_SOLSYS_DF['ET'].apply(lambda x: \
@@ -67,3 +70,50 @@ INNER_SOLSYS_DF.loc[:, 'EARTH_MOON2VEN_ANGLE'] = \
                                                            illmn='299', \
                                                            obsrvr='301', \
                                                            abcorr='LT+S')))
+
+# Are photos of both objects "photogenic"? Let's apply a pandas filtering
+# with some artificially set angular distances and create a binary tag for
+# photogenic (1) and non-photogenic (0) constellations
+#
+# Angular distance Venus - Sun: > 30 degrees
+# Angular distance Moon - Sun: > 30 degrees
+# Angular distance Moon - Venus: < 10 degree
+INNER_SOLSYS_DF.loc[:, 'PHOTOGENIC'] = \
+    INNER_SOLSYS_DF.apply(lambda x: 1 if (x['EARTH_VEN2SUN_ANGLE'] > 30.0) \
+                                       & (x['EARTH_MOON2SUN_ANGLE'] > 30.0) \
+                                       & (x['EARTH_MOON2VEN_ANGLE'] < 10.0) \
+                                      else 0, axis=1)
+
+print('Number of hours computed: %s (around %s days)' \
+      % (len(INNER_SOLSYS_DF), round(len(INNER_SOLSYS_DF) / 24)))
+
+print('Number of photogenic hours: %s (around %s days)' \
+      % (len(INNER_SOLSYS_DF.loc[INNER_SOLSYS_DF['PHOTOGENIC'] == 1]), \
+         round(len(INNER_SOLSYS_DF.loc[INNER_SOLSYS_DF['PHOTOGENIC'] == 1]) \
+               / 24)))
+
+#Set a figure
+FIG, AX = plt.subplots(figsize=(12,8))
+
+#Plot the phase anfles; apply different colours for the curves
+#and set a legend label
+AX.plot(INNER_SOLSYS_DF['UTC'], INNER_SOLSYS_DF['EARTH_VEN2SUN_ANGLE'], \
+        color='tab:orange', label='Venus - Sun')
+
+AX.plot(INNER_SOLSYS_DF['UTC'], INNER_SOLSYS_DF['EARTH_MOON2SUN_ANGLE'], \
+        color='tab:gray', label='Moon - Sun')
+
+AX.plot(INNER_SOLSYS_DF['UTC'], INNER_SOLSYS_DF['EARTH_MOON2VEN_ANGLE'], \
+        color='tab:black', label='Moon - Venus')
+
+#Set labels
+AX.set_xlabel('Date in UTC')
+AX.set_ylabel('Angle in degrees')
+
+#Set limits
+AX.set_xlim(min(INNER_SOLSYS_DF['UTC']), max(INNER_SOLSYS_DF['UTC']))
+
+#Set a grid
+AX.grid(axis='x', linestyle='dashed', alpha=0.5)
+
+#Set a month and day
