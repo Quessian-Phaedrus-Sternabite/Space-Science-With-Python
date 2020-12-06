@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="" />
+    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/kernel_meta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -366,10 +370,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="722" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1607134957372" />
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607231464577">
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607286704155">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607231464577" />
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607286704155" />
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607110641143">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
