@@ -188,11 +188,11 @@ for ax_f, planet_abr, planet_name in zip([AX1, AX2, AX3, AX4], \
     #Plot distance between SSB and Sun
     ax_f.plot(SOLAR_SYSTEM_DF['UTC'], \
               SOLAR_SYSTEM_DF['SSB_WRT_SUN_SCALED_DIST'], \
-              color='tab=blue')
+              color='tab:blue')
 
     #A y label is set and color of labels and ticks are  adjusted for
     #Better visibility
-    ax_f.set_ylabel('SSB Dist. in sun Radii', color='tab=blue')
+    ax_f.set_ylabel('SSB Dist. in sun Radii', color='tab:blue')
     ax_f.tick_params(axis='y', labelcolor='tab:blue')
 
     #Set X (based on the min and max date) and y limits (The SSB has varying
