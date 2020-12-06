@@ -4,9 +4,7 @@ import numpy as np
 from matplotlib import  pyplot as plt
 
 # Furnishes Meta files
-spiceypy.furnsh('_kernels/pck/pck00010.tpc')
-spiceypy.furnsh('_kernels/spk/de432s.bsp')
-spiceypy.furnsh('_kernels/lsk/naif0012.tls')
+spiceypy.furnsh('kernel_meta.txt')
 
 # We want to compute the Solar System barycentre (SSB) w.r.t to the centre of
 # the Sun for a certain time interval.
