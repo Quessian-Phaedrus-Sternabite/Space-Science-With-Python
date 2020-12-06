@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/kernel_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -300,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607236458837</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Created new directory for Venus_Moon_Photo, A project that will determine a time when a venus/moon photo is optimal. You can change init and end time to adjust dates.">
+      <created>1607287491888</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1607287491888</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -315,7 +321,8 @@
     <MESSAGE value="Finished adding subplots and subsequently VIS_SSB_INFLUENCES.py! Should work fine, about to test plot generation." />
     <MESSAGE value="Debugged and it works!!!!&#10;View PLANETS_SUN_SSB_PHASE_ANGLE.png for results" />
     <MESSAGE value="Final save - everything works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final save - everything works!" />
+    <MESSAGE value="Created new directory for Venus_Moon_Photo, A project that will determine a time when a venus/moon photo is optimal. You can change init and end time to adjust dates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new directory for Venus_Moon_Photo, A project that will determine a time when a venus/moon photo is optimal. You can change init and end time to adjust dates." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
