@@ -179,4 +179,13 @@ FIG, (AX1, AX2, AX3, AX4) = plt.subplots(4, 1, sharex=True, figsize=(8,20))
 # axis individually
 for ax_f, planet_abr, planet_name in zip([AX1, AX2, AX3, AX4], \
                                          ['JUP', 'SAT', 'URA', 'NEP'], \
-                                         )
+                                         ['Jupiter', 'Saturn', 'Uranus', \
+                                          'Neptune']):
+
+    #Set the planets name as subplot title (instead of legend)
+    ax_f.set_title(planet_name, color='tab:orange')
+
+    #Plot distance between SSB and Sun
+    ax_f.plot(SOLAR_SYSTEM_DF['UTC'], \
+              SOLAR_SYSTEM_DF['SSB_WRT_SUN_SCALED_DIST'], \
+              color='tab=blue')
