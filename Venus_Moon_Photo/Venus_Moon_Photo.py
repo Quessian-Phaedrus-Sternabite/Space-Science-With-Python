@@ -116,4 +116,23 @@ AX.set_xlim(min(INNER_SOLSYS_DF['UTC']), max(INNER_SOLSYS_DF['UTC']))
 #Set a grid
 AX.grid(axis='x', linestyle='dashed', alpha=0.5)
 
-#Set a month and day
+#Set a month and day locators
+AX.xaxis.set_major_locator(matpl_dates.MonthLocator())
+AX.xaxis.set_minor_locator(matpl_dates.DayLocator())
+
+#Set a format for the date-time (Year + Month name)
+AX.xaxis.set_major_formatter(matpl_dates.DateFormatter('%Y-%b'))
+
+# Iterate through the "photogenic" results and draw vertical lines where the
+# "photogenic" conditions apply
+for photogenic_utc in INNER_SOLSYS_DF.loc[INNER_SOLSYS_DF['PHOTOGENIC'] == 1]['UTC']:
+    AX.axvline(photogenic_utc, color='tab:blue', alpha=.2)
+
+#Create the legend in the top right corner of the plot
+AX.legend(fancybox=True, loc='upper right', framealpha=1)
+
+#Rotate the date-times
+plt.xticks(rotation=45)
+
+#Save the figure!
+plt.savefig('VENUS_SUN_MOON.png', dpi=400)
