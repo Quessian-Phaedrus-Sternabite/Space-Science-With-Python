@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sky maps/2020-12-07 T11_01_54_sky_map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space maps/2020-12-07 T09_37_42_sky_map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Space maps/eclipj2000_sky_map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Sky map">
+  <component name="RunManager" selected="Python.Sky map (1)">
     <configuration name="Projection testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -71,7 +70,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="SSB_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Sky map (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,11 +78,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SSB_calculator" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sky maps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SSB_calculator/SSB_calculator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sky maps/Sky map.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Sky map (1)" />
         <item itemvalue="Python.Sky map" />
         <item itemvalue="Python.Projection testing" />
         <item itemvalue="Python.Venus_Moon_Photo" />
         <item itemvalue="Python.VIS_SSB_INFLUENCES" />
-        <item itemvalue="Python.SSB_calculator" />
       </list>
     </recent_temporary>
   </component>
@@ -466,22 +465,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="1515" height="169" key="GridCell.Tab.0.bottom" timestamp="1607356732397">
+    <state width="1515" height="169" key="GridCell.Tab.0.bottom" timestamp="1607360512943">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
-    <state width="1515" height="169" key="GridCell.Tab.0.center" timestamp="1607356732397">
+    <state width="1515" height="169" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607360512943" />
+    <state width="1515" height="169" key="GridCell.Tab.0.center" timestamp="1607360512943">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
-    <state width="1515" height="169" key="GridCell.Tab.0.left" timestamp="1607356732396">
+    <state width="1515" height="169" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607360512943" />
+    <state width="1515" height="169" key="GridCell.Tab.0.left" timestamp="1607360512943">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607356732396" />
-    <state width="1515" height="169" key="GridCell.Tab.0.right" timestamp="1607356732397">
+    <state width="1515" height="169" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607360512943" />
+    <state width="1515" height="169" key="GridCell.Tab.0.right" timestamp="1607360512943">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
+    <state width="1515" height="169" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607360512943" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
