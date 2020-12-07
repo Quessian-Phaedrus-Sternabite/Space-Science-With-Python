@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T13_40_14_sky_map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sky maps/2020-12-07 T09_58_53_sky_map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sky maps/2020-12-07 T11_01_54_sky_map.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sky maps/2020-12-07 T11_25_30_sky_map.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -440,12 +444,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607362227040</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Finished changing coords to long and lat">
+      <created>1607369893057</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1607369893057</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adding in 4 additional plots - establishing for loop now." />
     <MESSAGE value="Changed manual furnshing to meta kernel" />
     <MESSAGE value="Began adding subplots for planets." />
     <MESSAGE value="Finished adding subplots and subsequently VIS_SSB_INFLUENCES.py! Should work fine, about to test plot generation." />
@@ -470,37 +480,38 @@
     <MESSAGE value="Finished adding in extra planets: NOTE - SLIGHT INNACURACY DUE TO LACK OF DATA FOR JUPITER SATURN AND MERCURY; USED BARYCENTRES INSTEAD." />
     <MESSAGE value="Established new dataframe to gather coordinates of celestial bodies" />
     <MESSAGE value="No errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="No errors" />
+    <MESSAGE value="Finished changing coords to long and lat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished changing coords to long and lat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607362226311">
+    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607369892504">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607362226311" />
+    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607369892504" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="746" height="169" key="GridCell.Tab.0.bottom" timestamp="1607362230154">
+    <state width="747" height="165" key="GridCell.Tab.0.bottom" timestamp="1607370330549">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="169" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607362230154" />
-    <state width="746" height="169" key="GridCell.Tab.0.center" timestamp="1607362230154">
+    <state width="747" height="165" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607370330549" />
+    <state width="747" height="165" key="GridCell.Tab.0.center" timestamp="1607370330548">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="169" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607362230154" />
-    <state width="746" height="169" key="GridCell.Tab.0.left" timestamp="1607362230154">
+    <state width="747" height="165" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607370330548" />
+    <state width="747" height="165" key="GridCell.Tab.0.left" timestamp="1607370330548">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="169" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607362230154" />
-    <state width="746" height="169" key="GridCell.Tab.0.right" timestamp="1607362230154">
+    <state width="747" height="165" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607370330548" />
+    <state width="747" height="165" key="GridCell.Tab.0.right" timestamp="1607370330548">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="169" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607362230154" />
+    <state width="747" height="165" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607370330548" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

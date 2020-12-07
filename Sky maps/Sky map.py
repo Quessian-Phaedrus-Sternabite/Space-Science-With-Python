@@ -102,7 +102,7 @@ plt.legend()
 plt.grid(True)
 
 # Save the Figure
-plt.savefig('%s_sky_map.png' % MAP_TITLE, dpi=400)
+plt.savefig('Sky maps/%s_sky_map.png' % MAP_TITLE, dpi=400)
 
 # Now we want the coordinates in equatorial J2000. For this purpose we
 # iterate through all celestial bodies
@@ -179,3 +179,6 @@ eclip_plane_df.loc[:, 'j2000_long_rad4plot'] = \
 
 eclip_plane_df.loc[:, 'j2000_lat_rad'] = \
     eclip_plane_df['j2000_direction'].apply(lambda x: spiceypy.recrad(x)[2])
+
+# We plot now the data in equatorial J2000. Again with a dark background and
+# the same properties as before
