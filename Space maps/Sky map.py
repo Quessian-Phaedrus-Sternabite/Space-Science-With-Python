@@ -12,6 +12,8 @@ DATETIME_UTC = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
 # convert to ET
 DATETIME_ET = spiceypy.utc2et(DATETIME_UTC)
 
+MAP_TITLE = datetime.datetime.now().strftime('%Y-%m-%d T%H_%M_%S')
+
 # We want to compute the coordinates for different Solar System bodies as seen
 # from our planet. First, a pandas dataframe is set that is used to append the
 # computed data
@@ -101,4 +103,4 @@ plt.legend()
 plt.grid(True)
 
 #Save the Figure
-plt.savefig('eclipj2000_sky_map.png', dpi=400)
+plt.savefig('%s_sky_map.png' % MAP_TITLE, dpi=400)
