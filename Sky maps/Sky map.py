@@ -26,7 +26,7 @@ solsys_df.loc[:, 'UTC'] = [DATETIME_UTC]
 # Set a dictionary that lists some body names and the corresponding NAIF ID
 # code. Mars has the ID 499, however the loaded kernels do not contain the
 # positional information. We use the Mars barycentre instead
-SOLSYS_DICT = {'SUN': 10, 'MERCURY':199, 'VENUS': 299, 'MOON': 301, 'MARS': 4,'JUPITER':5, 'SATURN':6}
+SOLSYS_DICT = {'SUN': 10, 'MERCURY':199, 'VENUS': 299, 'MOON': 30, 'MARS': 4,'JUPITER':5, 'SATURN':6}
 
 # Iterate through the dictionary and compute miscellaneous positional
 # Parameters
@@ -104,3 +104,4 @@ plt.grid(True)
 
 #Save the Figure
 plt.savefig('%s_sky_map.png' % MAP_TITLE, dpi=400)
+

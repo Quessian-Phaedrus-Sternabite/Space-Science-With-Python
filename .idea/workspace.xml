@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space maps/2020-12-07 T09_37_42_sky_map.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Space maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space maps/eclipj2000_sky_map.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,12 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607355549276</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Finished adding in extra planets: NOTE - SLIGHT INNACURACY DUE TO LACK OF DATA FOR JUPITER SATURN AND MERCURY; USED BARYCENTRES INSTEAD.">
+      <created>1607356812423</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1607356812423</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updating Barycentre influences" />
     <MESSAGE value="Finished VIS_SSB_INFLUENCES.py" />
     <MESSAGE value="Update: Made minor changes, continuing development on VIS_SSB_INFLUENCES.py, to be renamed later" />
     <MESSAGE value="Adding in 4 additional plots - establishing for loop now." />
@@ -442,17 +450,18 @@
     <MESSAGE value="Computed long into radians; I'm testing now." />
     <MESSAGE value="Everything works!" />
     <MESSAGE value="Added a date for the title. Format Year-Month-Day THour_Minute_Second" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a date for the title. Format Year-Month-Day THour_Minute_Second" />
+    <MESSAGE value="Finished adding in extra planets: NOTE - SLIGHT INNACURACY DUE TO LACK OF DATA FOR JUPITER SATURN AND MERCURY; USED BARYCENTRES INSTEAD." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished adding in extra planets: NOTE - SLIGHT INNACURACY DUE TO LACK OF DATA FOR JUPITER SATURN AND MERCURY; USED BARYCENTRES INSTEAD." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607355548817">
+    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607356811933">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607355548817" />
+    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607356811933" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
