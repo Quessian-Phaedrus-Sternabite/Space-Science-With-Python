@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_28_00_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_28_22_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_28_56_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_29_07_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_29_17_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_29_26_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-07 T14_29_34_sky_map.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
-    </list>
+    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -476,12 +466,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607372872224</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Whoops. Process finished with exit code -1073741819 (0xC0000005)">
+      <created>1607373119953</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1607373119953</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Debugged and it works!!!!&#10;View PLANETS_SUN_SSB_PHASE_ANGLE.png for results" />
     <MESSAGE value="Final save - everything works!" />
     <MESSAGE value="Created new directory for Venus_Moon_Photo, A project that will determine a time when a venus/moon photo is optimal. You can change init and end time to adjust dates." />
     <MESSAGE value="Establishing pandas dataframe." />
@@ -506,37 +502,38 @@
     <MESSAGE value="Minor change - saves code to seperate folder now. Deleted previos sky maps." />
     <MESSAGE value="Finished!" />
     <MESSAGE value="About to make file with 20000 dpi. program works beuatifully." />
-    <option name="LAST_COMMIT_MESSAGE" value="About to make file with 20000 dpi. program works beuatifully." />
+    <MESSAGE value="Whoops. Process finished with exit code -1073741819 (0xC0000005)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Whoops. Process finished with exit code -1073741819 (0xC0000005)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607372871677">
+    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607373119305">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607372871677" />
+    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607373119305" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="1515" height="165" key="GridCell.Tab.0.bottom" timestamp="1607373039023">
+    <state width="1515" height="165" key="GridCell.Tab.0.bottom" timestamp="1607373123204">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="165" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607373039023" />
-    <state width="1515" height="165" key="GridCell.Tab.0.center" timestamp="1607373039023">
+    <state width="1515" height="165" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607373123204" />
+    <state width="1515" height="165" key="GridCell.Tab.0.center" timestamp="1607373123204">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="165" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607373039023" />
-    <state width="1515" height="165" key="GridCell.Tab.0.left" timestamp="1607373039023">
+    <state width="1515" height="165" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607373123204" />
+    <state width="1515" height="165" key="GridCell.Tab.0.left" timestamp="1607373123204">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="165" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607373039023" />
-    <state width="1515" height="165" key="GridCell.Tab.0.right" timestamp="1607373039023">
+    <state width="1515" height="165" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607373123204" />
+    <state width="1515" height="165" key="GridCell.Tab.0.right" timestamp="1607373123204">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="165" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607373039023" />
+    <state width="1515" height="165" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607373123204" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
