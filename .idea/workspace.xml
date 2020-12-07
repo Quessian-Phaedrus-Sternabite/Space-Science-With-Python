@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/kelle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/kelle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
     </list>
@@ -535,9 +534,13 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="682" y="168" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.864@0.0.1536.864" timestamp="1607297405038" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607352633936">
+    <state x="847" y="164" width="609" height="536" key="find.popup" timestamp="1607361990595">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607352633936" />
+    <state x="847" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1607361990595" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607361985597">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607361985597" />
   </component>
 </project>
