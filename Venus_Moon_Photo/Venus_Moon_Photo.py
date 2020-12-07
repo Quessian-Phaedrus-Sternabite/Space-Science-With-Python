@@ -10,9 +10,9 @@ spiceypy.furnsh('kernel_meta.txt')
 
 
 #Create Initial and endtime date-time object as a string.
-INIT_TIME_UTC_STR = datetime.datetime(year=2020, month=1, day=1) \
+INIT_TIME_UTC_STR = datetime.datetime(year=2020, month=12, day=1) \
                         .strftime('%Y-%m-%dT%H:%M:%S')
-END_TIME_UTC_STR = datetime.datetime(year=2020, month=6, day=1) \
+END_TIME_UTC_STR = datetime.datetime(year=2023, month=6, day=1) \
                         .strftime('%Y-%m-%dT%H:%M:%S')
 
 #conver to Ephemeris Time (ET) using utc2et
@@ -93,7 +93,7 @@ print('Number of photogenic hours: %s (around %s days)' \
                / 24)))
 
 #Set a figure
-FIG, AX = plt.subplots(figsize=(12,8))
+FIG, AX = plt.subplots(figsize=(72,10))
 
 #Plot the phase anfles; apply different colours for the curves
 #and set a legend label
@@ -119,6 +119,7 @@ AX.grid(axis='x', linestyle='dashed', alpha=0.5)
 #Set a month and day locators
 AX.xaxis.set_major_locator(matpl_dates.MonthLocator())
 AX.xaxis.set_minor_locator(matpl_dates.DayLocator())
+
 
 #Set a format for the date-time (Year + Month name)
 AX.xaxis.set_major_formatter(matpl_dates.DateFormatter('%Y-%b'))

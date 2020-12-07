@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2020-DEC2021.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2020-JUL2023.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2021-DEC2022.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2022-DEC2023.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSB_WRT_SUN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -327,7 +333,28 @@
       <option name="project" value="LOCAL" />
       <updated>1607297069148</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Beginning debugging - code is finished.">
+      <created>1607297484377</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1607297484377</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data.">
+      <created>1607297565183</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1607297565183</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Repushing - no changes but workspace.xml">
+      <created>1607297634342</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1607297634342</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -346,7 +373,10 @@
     <MESSAGE value="Establishing pandas dataframe." />
     <MESSAGE value="Almost done establishing dataframe and began computing phase angles. Ran into error: debugging." />
     <MESSAGE value="Quick local push: Finished calculations and assigned different conditions a photogenic label, runs with no errors. Plotting now!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick local push: Finished calculations and assigned different conditions a photogenic label, runs with no errors. Plotting now!" />
+    <MESSAGE value="Beginning debugging - code is finished." />
+    <MESSAGE value="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data." />
+    <MESSAGE value="Repushing - no changes but workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repushing - no changes but workspace.xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
@@ -361,22 +391,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="746" height="174" key="GridCell.Tab.0.bottom" timestamp="1607297505324">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607307003823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607297505324" />
-    <state width="746" height="174" key="GridCell.Tab.0.center" timestamp="1607297505324">
+    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
+    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607307003823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607297505324" />
-    <state width="746" height="174" key="GridCell.Tab.0.left" timestamp="1607297505324">
+    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
+    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607307003823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607297505324" />
-    <state width="746" height="174" key="GridCell.Tab.0.right" timestamp="1607297505324">
+    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607307003823">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607297505324" />
+    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607297408105">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
