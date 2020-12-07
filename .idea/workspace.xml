@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Space maps/kernel_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Space maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -364,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607308047676</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Created sky map project: began work on setup.">
+      <created>1607309374654</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607309374654</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -388,7 +394,8 @@
     <MESSAGE value="Repushing - no changes but workspace.xml" />
     <MESSAGE value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
     <MESSAGE value="Finished Venus photos project - beginning new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Venus photos project - beginning new project" />
+    <MESSAGE value="Created sky map project: began work on setup." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created sky map project: began work on setup." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
@@ -403,38 +410,38 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="746" height="174" key="GridCell.Tab.0.bottom" timestamp="1607309020969">
+    <state width="746" height="174" key="GridCell.Tab.0.bottom" timestamp="1607309417106">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
-    <state width="746" height="174" key="GridCell.Tab.0.center" timestamp="1607309020969">
+    <state width="746" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607309417106" />
+    <state width="746" height="174" key="GridCell.Tab.0.center" timestamp="1607309417106">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
-    <state width="746" height="174" key="GridCell.Tab.0.left" timestamp="1607309020969">
+    <state width="746" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607309417106" />
+    <state width="746" height="174" key="GridCell.Tab.0.left" timestamp="1607309417106">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
-    <state width="746" height="174" key="GridCell.Tab.0.right" timestamp="1607309020969">
+    <state width="746" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607309417106" />
+    <state width="746" height="174" key="GridCell.Tab.0.right" timestamp="1607309417106">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
-    <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607297408105">
+    <state width="746" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607309417106" />
+    <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="70" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607297408105" />
-    <state width="746" height="70" key="GridCell.Tab.1.center" timestamp="1607297408105">
+    <state width="746" height="70" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607309417103" />
+    <state width="746" height="70" key="GridCell.Tab.1.center" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="70" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1607297408105" />
-    <state width="746" height="70" key="GridCell.Tab.1.left" timestamp="1607297408105">
+    <state width="746" height="70" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1607309417103" />
+    <state width="746" height="70" key="GridCell.Tab.1.left" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="70" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1607297408105" />
-    <state width="746" height="70" key="GridCell.Tab.1.right" timestamp="1607297408105">
+    <state width="746" height="70" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1607309417103" />
+    <state width="746" height="70" key="GridCell.Tab.1.right" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="70" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1607297408105" />
+    <state width="746" height="70" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1607309417103" />
     <state x="277" y="75" key="SettingsEditor" timestamp="1606787907256">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -443,10 +450,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="722" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1607134957372" />
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607286704155">
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607352502718">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607286704155" />
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607352502718" />
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607110641143">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -459,9 +466,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="682" y="168" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.864@0.0.1536.864" timestamp="1607297405038" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607296989396">
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607352633936">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607296989396" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607352633936" />
   </component>
 </project>
