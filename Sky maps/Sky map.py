@@ -166,3 +166,16 @@ ECL2EQU_MAT = spiceypy.pxform(fromstr='ECLIPJ2000', \
 # transformation matrix
 eclip_plane_df.loc[:, 'j2000_direction'] = \
     eclip_plane_df['ECLIPJ2000_direction'].apply(lambda x: ECL2EQU_MAT.dot(x))
+
+# Compute now the longitude (and matplotlib compatible version) and the
+# latitude values using the SPICE function recrad
+eclip_plane_df.loc[:, 'j2000_long_rad'] = \
+    eclip_plane_df['j2000_direction'].apply(lambda x: spiceypy.recrad(x)[1])
+
+eclip_plane_df.loc[:, 'j2000_long_rad4plot'] = \
+    eclip_plane_df['j2000_long_rad'] \
+        .apply(lambda x: -1*((x % np.pi) - np.pi) if x> np.pi \
+               else -1*x)
+
+eclip_plane_df.loc[:, 'j2000_lat_rad'] = \
+    eclip_plane_df['j2000_direction'].apply(lambda x: spiceypy.recrad(x)[2])
