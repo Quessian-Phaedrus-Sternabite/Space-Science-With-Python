@@ -208,11 +208,11 @@ plt.xticks(ticks=np.radians([-150, -120, -90, -60, -30, 0, \
 
 #plot the label
 plt.xlabel('Right ascension in hours')
-plt.ylabel('Diclination in deg.')
+plt.ylabel('Declination in deg.')
 
 #Create a legend and grid
 plt.legend()
 plt.grid(True)
 
 #Save it!
-plt.savefig('j2000_sky_map.png', dpi=300)
+plt.savefig('Sky maps with declination and hours/%s_j2000_sky_map.png' % MAP_TITLE, dpi=2000)
