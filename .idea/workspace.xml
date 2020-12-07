@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2020-DEC2021.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2020-JUL2023.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2021-DEC2022.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON_DEC2022-DEC2023.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SSB_WRT_SUN.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Venus_Moon_Photo/VENUS_SUN_MOON.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Venus_Moon_Photo/Venus_Moon_Photo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -354,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607297634342</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023">
+      <created>1607307416150</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1607307416151</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -376,17 +376,18 @@
     <MESSAGE value="Beginning debugging - code is finished." />
     <MESSAGE value="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data." />
     <MESSAGE value="Repushing - no changes but workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repushing - no changes but workspace.xml" />
+    <MESSAGE value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607297633640">
+    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607307415288">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607297633640" />
+    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607307415288" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
