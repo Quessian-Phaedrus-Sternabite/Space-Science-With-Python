@@ -51,3 +51,5 @@ for body_name in SOLSYS_DICT:
     solsys_df.loc[:, f'{body_name}_lat_rad_ecl'] = \
         solsys_df[f'dir_{body_name}_wrt_earth_ecl'] \
         .apply(lambda x: spiceypy.recrad(x)[2])
+
+    

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Space maps/Projection testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Space maps/empty_aitoff.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Space maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
     </list>
@@ -47,8 +49,8 @@
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Sky map">
-    <configuration name="Keplars first law (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Projection testing">
+    <configuration name="Projection testing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -56,11 +58,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Keplars first law" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Space maps" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Keplars first law/Keplars first law.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Space maps/Projection testing.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Projection testing" />
         <item itemvalue="Python.Sky map" />
         <item itemvalue="Python.Venus_Moon_Photo" />
         <item itemvalue="Python.VIS_SSB_INFLUENCES" />
         <item itemvalue="Python.SSB_calculator" />
-        <item itemvalue="Python.Keplars first law (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -377,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607353025931</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Minor debugging - fixed all errors. Finished converting latitde and longitude to radians and stored in DataFrame.">
+      <created>1607353278693</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607353278693</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -403,37 +412,38 @@
     <MESSAGE value="Finished Venus photos project - beginning new project" />
     <MESSAGE value="Created sky map project: began work on setup." />
     <MESSAGE value="Created pandas dataframe and began establishing calculations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created pandas dataframe and began establishing calculations." />
+    <MESSAGE value="Minor debugging - fixed all errors. Finished converting latitde and longitude to radians and stored in DataFrame." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor debugging - fixed all errors. Finished converting latitde and longitude to radians and stored in DataFrame." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607353025094">
+    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607353277869">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607353025094" />
+    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607353277869" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="747" height="170" key="GridCell.Tab.0.bottom" timestamp="1607353219659">
+    <state width="747" height="170" key="GridCell.Tab.0.bottom" timestamp="1607353425069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="170" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607353219659" />
-    <state width="747" height="170" key="GridCell.Tab.0.center" timestamp="1607353219658">
+    <state width="747" height="170" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607353425069" />
+    <state width="747" height="170" key="GridCell.Tab.0.center" timestamp="1607353425069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="170" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607353219658" />
-    <state width="747" height="170" key="GridCell.Tab.0.left" timestamp="1607353219657">
+    <state width="747" height="170" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607353425069" />
+    <state width="747" height="170" key="GridCell.Tab.0.left" timestamp="1607353425069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="170" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607353219657" />
-    <state width="747" height="170" key="GridCell.Tab.0.right" timestamp="1607353219658">
+    <state width="747" height="170" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607353425069" />
+    <state width="747" height="170" key="GridCell.Tab.0.right" timestamp="1607353425069">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="747" height="170" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607353219658" />
+    <state width="747" height="170" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607353425069" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
