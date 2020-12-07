@@ -39,3 +39,15 @@ for body_name in SOLSYS_DICT:
                                          ref='ECLIPJ2000', \
                                          abcorr='LT+S', \
                                          obs=399)[0])
+
+    # Compute the longitude and latitude of the body in radians in ECLIPJ2000
+    # using the function recrad. recrad returns the distance, longitude and
+    # latitude value; thus, apply [1] and [2] to get the longitude and
+    # latitude, respectively
+    solsys_df.loc[:, f'{body_name}_long_rad_ecl'] = \
+        solsys_df[f'dir_{body_name}_wrt_earth_ecl'] \
+        .apply(lambda x: spiceypy.recrad(x)[1])
+
+    solsys_df.loc[:, f'{body_name}_lat_rad_ecl'] = \
+        solsys_df[f'dir_{body_name}_wrt_earth_ecl'] \
+        .apply(lambda x: spiceypy.recrad(x)[2])
