@@ -405,12 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1607354608401</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Added a date for the title. Format Year-Month-Day THour_Minute_Second">
+      <created>1607355549276</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1607355549276</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Render of the plot" />
     <MESSAGE value="Updating Barycentre influences" />
     <MESSAGE value="Finished VIS_SSB_INFLUENCES.py" />
     <MESSAGE value="Update: Made minor changes, continuing development on VIS_SSB_INFLUENCES.py, to be renamed later" />
@@ -435,37 +441,38 @@
     <MESSAGE value="Created new python file to test the Aitoff projection, and saved output as png. Implementing projection fix to make it more compatible with current computations. No bugs." />
     <MESSAGE value="Computed long into radians; I'm testing now." />
     <MESSAGE value="Everything works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Everything works!" />
+    <MESSAGE value="Added a date for the title. Format Year-Month-Day THour_Minute_Second" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a date for the title. Format Year-Month-Day THour_Minute_Second" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="0" y="18" key="CommitChangelistDialog2" timestamp="1607354607434">
+    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607355548817">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607354607434" />
+    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607355548817" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="1515" height="169" key="GridCell.Tab.0.bottom" timestamp="1607355461811">
+    <state width="1515" height="169" key="GridCell.Tab.0.bottom" timestamp="1607356732397">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607355461811" />
-    <state width="1515" height="169" key="GridCell.Tab.0.center" timestamp="1607355461811">
+    <state width="1515" height="169" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
+    <state width="1515" height="169" key="GridCell.Tab.0.center" timestamp="1607356732397">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607355461811" />
-    <state width="1515" height="169" key="GridCell.Tab.0.left" timestamp="1607355461811">
+    <state width="1515" height="169" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
+    <state width="1515" height="169" key="GridCell.Tab.0.left" timestamp="1607356732396">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607355461811" />
-    <state width="1515" height="169" key="GridCell.Tab.0.right" timestamp="1607355461811">
+    <state width="1515" height="169" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607356732396" />
+    <state width="1515" height="169" key="GridCell.Tab.0.right" timestamp="1607356732397">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="169" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607355461811" />
+    <state width="1515" height="169" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607356732397" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

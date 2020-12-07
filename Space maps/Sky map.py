@@ -26,7 +26,7 @@ solsys_df.loc[:, 'UTC'] = [DATETIME_UTC]
 # Set a dictionary that lists some body names and the corresponding NAIF ID
 # code. Mars has the ID 499, however the loaded kernels do not contain the
 # positional information. We use the Mars barycentre instead
-SOLSYS_DICT = {'SUN': 10, 'VENUS': 299, 'MOON': 301, 'MARS': 4}
+SOLSYS_DICT = {'SUN': 10, 'MERCURY':199, 'VENUS': 299, 'MOON': 301, 'MARS': 4,'JUPITER':5, 'SATURN':6}
 
 # Iterate through the dictionary and compute miscellaneous positional
 # Parameters
@@ -77,7 +77,7 @@ plt.subplot(projection="aitoff")
 plt.title(f'{DATETIME_UTC} UTC', fontsize=10)
 
 #Each body should have an individual colour; set a list with some.
-BODY_COLOUR_ARRAY = ['y', 'tab:orange', 'tab:gray', 'tab:red']
+BODY_COLOUR_ARRAY = ['y', 'tab:brown', 'tab:orange', 'tab:gray', 'tab:red', 'xkcd:rust' ,'xkcd:taupe']
 
 for body_name, body_colour in zip(SOLSYS_DICT, BODY_COLOUR_ARRAY):
 
