@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Space maps/Sky map.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Space maps/kernel_meta.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,19 +35,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Space maps" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final\_kernels" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.Venus_Moon_Photo">
+  <component name="RunManager" selected="Python.Sky map">
     <configuration name="Keplars first law (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -67,27 +70,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Keplars first law" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Space sciene with python final" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Keplars first law.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="SSB_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,6 +83,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SSB_calculator/SSB_calculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Sky map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Space sciene with python final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Space maps" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Space maps/Sky map.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -153,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Sky map" />
         <item itemvalue="Python.Venus_Moon_Photo" />
         <item itemvalue="Python.VIS_SSB_INFLUENCES" />
         <item itemvalue="Python.SSB_calculator" />
         <item itemvalue="Python.Keplars first law (1)" />
-        <item itemvalue="Python.Keplars first law" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +357,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607307416151</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Finished Venus photos project - beginning new project">
+      <created>1607308047676</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1607308047676</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -377,37 +387,38 @@
     <MESSAGE value="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data." />
     <MESSAGE value="Repushing - no changes but workspace.xml" />
     <MESSAGE value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
+    <MESSAGE value="Finished Venus photos project - beginning new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Venus photos project - beginning new project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607307415288">
+    <state x="28" y="18" key="CommitChangelistDialog2" timestamp="1607308047136">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607307415288" />
+    <state x="28" y="18" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607308047136" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom" timestamp="1607307003823">
+    <state width="746" height="174" key="GridCell.Tab.0.bottom" timestamp="1607309020969">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
-    <state width="1515" height="174" key="GridCell.Tab.0.center" timestamp="1607307003823">
+    <state width="746" height="174" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
+    <state width="746" height="174" key="GridCell.Tab.0.center" timestamp="1607309020969">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
-    <state width="1515" height="174" key="GridCell.Tab.0.left" timestamp="1607307003823">
+    <state width="746" height="174" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
+    <state width="746" height="174" key="GridCell.Tab.0.left" timestamp="1607309020969">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
-    <state width="1515" height="174" key="GridCell.Tab.0.right" timestamp="1607307003823">
+    <state width="746" height="174" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
+    <state width="746" height="174" key="GridCell.Tab.0.right" timestamp="1607309020969">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607307003823" />
+    <state width="746" height="174" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607309020969" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607297408105">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
