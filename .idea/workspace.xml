@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sky maps/2020-12-07 T11_01_54_sky_map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
     </list>
@@ -420,7 +419,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607356812423</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Finished adding in extra planets: NOTE - SLIGHT INNACURACY DUE TO LACK OF DATA FOR JUPITER SATURN AND MERCURY; USED BARYCENTRES INSTEAD.">
+      <created>1607361026379</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1607361026379</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -457,10 +463,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607356811933">
+    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607361025646">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607356811933" />
+    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607361025646" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

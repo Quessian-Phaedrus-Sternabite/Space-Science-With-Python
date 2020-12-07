@@ -26,7 +26,7 @@ solsys_df.loc[:, 'UTC'] = [DATETIME_UTC]
 # Set a dictionary that lists some body names and the corresponding NAIF ID
 # code. Mars has the ID 499, however the loaded kernels do not contain the
 # positional information. We use the Mars barycentre instead
-SOLSYS_DICT = {'SUN': 10, 'MERCURY':199, 'VENUS': 299, 'MOON': 301, 'MARS': 4,'JUPITER':5, 'SATURN':6}
+SOLSYS_DICT = {'SUN': 10, 'MERCURY': 199, 'VENUS': 299, 'MOON': 301, 'MARS': 4, 'JUPITER': 5, 'SATURN': 6}
 
 # Iterate through the dictionary and compute miscellaneous positional
 # Parameters
@@ -61,47 +61,85 @@ for body_name in SOLSYS_DICT:
 for body_name in SOLSYS_DICT:
     solsys_df.loc[:, f'{body_name}_long_rad4plot_ecl'] = \
         solsys_df[f'{body_name}_long_rad_ecl'] \
-            .apply(lambda x: -1*((x % np.pi) -np.pi) if x > np.pi \
-                    else -1*x)
+            .apply(lambda x: -1 * ((x % np.pi) - np.pi) if x > np.pi \
+            else -1 * x)
 
-#Create a sky map of the results
+# Create a sky map of the results
 
-#Set a dark bakground (The night sky is ... dark)
+# Set a dark bakground (The night sky is ... dark)
 plt.style.use('dark_background')
 
-#Create a figure than apply the aitoff projection
-plt.figure(figsize=(12,8))
+# Create a figure than apply the aitoff projection
+plt.figure(figsize=(12, 8))
 plt.subplot(projection="aitoff")
 
-#Set the UTC time string as a title
+# Set the UTC time string as a title
 plt.title(f'{DATETIME_UTC} UTC', fontsize=10)
 
-#Each body should have an individual colour; set a list with some.
-BODY_COLOUR_ARRAY = ['y', 'tab:brown', 'tab:orange', 'tab:gray', 'tab:red', 'xkcd:rust' ,'xkcd:taupe']
+# Each body should have an individual colour; set a list with some.
+BODY_COLOUR_ARRAY = ['y', 'tab:brown', 'tab:orange', 'tab:gray', 'tab:red', 'xkcd:rust', 'xkcd:taupe']
 
 for body_name, body_colour in zip(SOLSYS_DICT, BODY_COLOUR_ARRAY):
-
-    #Plot the longitude and latitude data. Apply the colour and
-    #other formatting parameters
+    # Plot the longitude and latitude data. Apply the colour and
+    # other formatting parameters
     plt.plot(solsys_df[f'{body_name}_long_rad4plot_ecl'], \
              solsys_df[f'{body_name}_lat_rad_ecl'], \
              color=body_colour, marker='o', linestyle='None', markersize=12, \
              label=body_name.capitalize())
 
-#Replace the standard x ticks (longitude) with the ecliptic coordinates
+# Replace the standard x ticks (longitude) with the ecliptic coordinates
 plt.xticks(ticks=np.radians([-150, -120, -90, -60, -30, 0, \
                              30, 60, 90, 120, 150]),
            labels=['150°', '120°', '90°', '60°', '30°', '0°', \
                    '330°', '300°', '270°', '240°', '210°'])
 
-#set some labels
+# set some labels
 plt.xlabel('Eclip. long. in deg')
 plt.ylabel('Eclip. lat. in deg')
 
-#Create a legend and grid
+# Create a legend and grid
 plt.legend()
 plt.grid(True)
 
-#Save the Figure
+# Save the Figure
 plt.savefig('%s_sky_map.png' % MAP_TITLE, dpi=400)
 
+# Now we want the coordinates in equatorial J2000. For this purpose we
+# iterate through all celestial bodies
+for body_name in SOLSYS_DICT:
+    # First, compute the directional vector of the body as seen from Earth in
+    # J2000
+    solsys_df.loc[:, f'dir_{body_name}_wrt_earth_equ'] = solsys_df['ET'] \
+        .apply(lambda x: spiceypy.spkezp(targ=SOLSYS_DICT[body_name], \
+                                         et=x, \
+                                         ref='J2000', \
+                                         abcorr=('LT+S'), \
+                                         obs=399)[0])
+
+    # Compute the longitude and latitude values in equatorial coordinates
+    solsys_df.loc[:, f'{body_name}_long_rad_equ'] = \
+        solsys_df[f'dir_{body_name}_wrt_earth_equ'] \
+            .apply(lambda x: spiceypy.recrad(x)[1])
+    solsys_df.loc[:, f'{body_name}_lat_rad_equ'] = \
+        solsys_df[f'dir_{body_name}_wrt_earth_equ'] \
+            .apply(lambda x: spiceypy.recrad(x)[2])
+
+    # Apply the same logic as shown before to compute the longitudes for the
+    # matplotlib figure
+    solsys_df.loc[:, f'{body_name}_long_rad4plot_equ'] = \
+        solsys_df[f'{body_name}_long_rad_equ'] \
+            .apply(lambda x: -1 * ((x % np.pi) - np.pi) if x > np.pi \
+            else -1 * x)
+
+# Before we plot the data, let's add the Ecliptic plane for the visualisation.
+# In ECLIPJ2000 the Ecliptic plane is the equator line (see corresponding
+# figure. The latitude is 0 degrees.
+
+# First, we create a separate dataframe for the ecliptic plan
+eclip_plane_df = pd.DataFrame()
+
+# Add the ecliptic longitude and latitude values for the plane. Note: here,
+# we need to use pi/2 (90 degrees) as the latitude, since we will apply a
+# SPICE function that expects spherical coordinates
+eclip_plane_df.loc[:, 'ECLIPJ2000_long_rad'] = np.linspace(0, 2*np.pi, 100)
+eclip_plane_df.loc[:, ]
