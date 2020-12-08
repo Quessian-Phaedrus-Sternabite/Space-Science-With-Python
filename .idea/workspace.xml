@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps with declination and hours/2020-12-08 T09_14_54_j2000_sky_map.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sky maps/Sky maps/2020-12-08 T09_14_54_sky_map.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -484,13 +482,19 @@
       <option name="project" value="LOCAL" />
       <updated>1607439288170</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Removed 21 outdated sky maps. Generated new one for current time.">
+      <created>1607440850891</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1607440850891</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created new directory for Venus_Moon_Photo, A project that will determine a time when a venus/moon photo is optimal. You can change init and end time to adjust dates." />
     <MESSAGE value="Establishing pandas dataframe." />
     <MESSAGE value="Almost done establishing dataframe and began computing phase angles. Ran into error: debugging." />
     <MESSAGE value="Quick local push: Finished calculations and assigned different conditions a photogenic label, runs with no errors. Plotting now!" />
@@ -515,17 +519,18 @@
     <MESSAGE value="About to make file with 20000 dpi. program works beuatifully." />
     <MESSAGE value="Whoops. Process finished with exit code -1073741819 (0xC0000005)" />
     <MESSAGE value="Ran a few minor tests. Generated an almost 10 mb file. Current program working as expected. Currently studying some of the code that I don't understand as much but is required for it to work." />
-    <option name="LAST_COMMIT_MESSAGE" value="Ran a few minor tests. Generated an almost 10 mb file. Current program working as expected. Currently studying some of the code that I don't understand as much but is required for it to work." />
+    <MESSAGE value="Removed 21 outdated sky maps. Generated new one for current time." />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed 21 outdated sky maps. Generated new one for current time." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="78" y="40" key="CommitChangelistDialog2" timestamp="1607439287018">
+    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1607440849704">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="78" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607439287018" />
+    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607440849704" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -578,10 +583,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.864@0.0.1536.864" timestamp="1607110641143" />
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607236091085">
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607440918570">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607236091085" />
+    <state x="962" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1607440918570" />
     <state x="682" y="168" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1607297405038">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
