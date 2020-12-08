@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Derive orbital elements/Derive orbital elements.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +38,15 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Sky maps\Sky maps with declination and hours" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final\_kernels" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Sky map (1)">
@@ -497,13 +498,19 @@
       <option name="project" value="LOCAL" />
       <updated>1607441318424</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Mild formatting">
+      <created>1607448102058</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1607448102058</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Almost done establishing dataframe and began computing phase angles. Ran into error: debugging." />
     <MESSAGE value="Quick local push: Finished calculations and assigned different conditions a photogenic label, runs with no errors. Plotting now!" />
     <MESSAGE value="Beginning debugging - code is finished." />
     <MESSAGE value="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data." />
@@ -528,7 +535,8 @@
     <MESSAGE value="Ran a few minor tests. Generated an almost 10 mb file. Current program working as expected. Currently studying some of the code that I don't understand as much but is required for it to work." />
     <MESSAGE value="Removed 21 outdated sky maps. Generated new one for current time." />
     <MESSAGE value="Fixed A MAJOR ERROR that went unnoticed - had some stray lines left from plot." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed A MAJOR ERROR that went unnoticed - had some stray lines left from plot." />
+    <MESSAGE value="Mild formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mild formatting" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
@@ -603,9 +611,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="847" y="164" width="609" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1607361990595" />
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607361985597">
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup" timestamp="1607448730240">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607361985597" />
+    <state x="814" y="185" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1607448730240" />
   </component>
 </project>
