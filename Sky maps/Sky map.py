@@ -141,15 +141,15 @@ eclip_plane_df = pd.DataFrame()
 # Add the ecliptic longitude and latitude values for the plane. Note: here,
 # we need to use pi/2 (90 degrees) as the latitude, since we will apply a
 # SPICE function that expects spherical coordinates
-eclip_plane_df.loc[:, 'ECLIPJ2000_long_rad'] = np.linspace(0, 2*np.pi, 100)
-eclip_plane_df.loc[:, 'ECLIPJ2000_lat_rad'] = np.pi/2.0
+eclip_plane_df.loc[:, 'ECLIPJ2000_long_rad'] = np.linspace(0, 2 * np.pi, 100)
+eclip_plane_df.loc[:, 'ECLIPJ2000_lat_rad'] = np.pi / 2.0
 
 # Compute the directional vectors of the ecliptic plane for the different
 # longitude values (the latitude is constant). Apply the SPICE function sphrec
 # to transform the spherical coordinates to vectors. r=1 is the distance,
 # here in our case: normalised distance
 eclip_plane_df.loc[:, 'ECLIPJ2000_direction'] = \
-    eclip_plane_df\
+    eclip_plane_df \
         .apply(lambda x: spiceypy.sphrec(r=1, \
                                          colat=x['ECLIPJ2000_lat_rad'], \
                                          lon=x['ECLIPJ2000_long_rad']), \
@@ -174,8 +174,8 @@ eclip_plane_df.loc[:, 'j2000_long_rad'] = \
 
 eclip_plane_df.loc[:, 'j2000_long_rad4plot'] = \
     eclip_plane_df['j2000_long_rad'] \
-        .apply(lambda x: -1*((x % np.pi) - np.pi) if x> np.pi \
-               else -1*x)
+        .apply(lambda x: -1 * ((x % np.pi) - np.pi) if x > np.pi \
+        else -1 * x)
 
 eclip_plane_df.loc[:, 'j2000_lat_rad'] = \
     eclip_plane_df['j2000_direction'].apply(lambda x: spiceypy.recrad(x)[2])
@@ -183,13 +183,12 @@ eclip_plane_df.loc[:, 'j2000_lat_rad'] = \
 # We plot now the data in equatorial J2000. Again with a dark background and
 # the same properties as before
 plt.style.use('dark_background')
-plt.figure(figsize=(12,8))
+plt.figure(figsize=(12, 8))
 plt.subplot(projection="aitoff")
 plt.title(f'{DATETIME_UTC} UTC', fontsize=10)
 
 # Iterate through the celestial bodies and plot them
 for body_name, body_colour in zip(SOLSYS_DICT, BODY_COLOUR_ARRAY):
-
     plt.plot(solsys_df[f'{body_name}_long_rad4plot_equ'], \
              solsys_df[f'{body_name}_lat_rad_equ'], \
              color=body_colour, marker='o', linestyle='None', markersize=12, \
@@ -197,7 +196,7 @@ for body_name, body_colour in zip(SOLSYS_DICT, BODY_COLOUR_ARRAY):
 
 # Plot the Ecliptic plane as a blue dotted line
 plt.plot(eclip_plane_df['j2000_long_rad4plot'], \
-         eclip_plane_df['j2000_lat_rad'], color='tab:blue', linestyle='None',  \
+         eclip_plane_df['j2000_lat_rad'], color='tab:blue', linestyle='None', \
          marker='o', markersize=2)
 
 # Convert the longitude values finally in right ascension hours
@@ -206,13 +205,13 @@ plt.xticks(ticks=np.radians([-150, -120, -90, -60, -30, 0, \
            labels=['10h', '8h', '6h', '4h', '2h', '0h', \
                    '22h', '20h', '18h', '16h', '14h'])
 
-#plot the label
+# plot the label
 plt.xlabel('Right ascension in hours')
 plt.ylabel('Declination in deg.')
 
-#Create a legend and grid
+# Create a legend and grid
 plt.legend()
 plt.grid(True)
 
-#Save it!
+# Save it!
 plt.savefig('Sky maps with declination and hours/%s_j2000_sky_map.png' % MAP_TITLE, dpi=400)
