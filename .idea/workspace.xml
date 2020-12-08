@@ -490,13 +490,19 @@
       <option name="project" value="LOCAL" />
       <updated>1607440850891</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Fixed A MAJOR ERROR that went unnoticed - had some stray lines left from plot.">
+      <created>1607441318424</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1607441318424</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Establishing pandas dataframe." />
     <MESSAGE value="Almost done establishing dataframe and began computing phase angles. Ran into error: debugging." />
     <MESSAGE value="Quick local push: Finished calculations and assigned different conditions a photogenic label, runs with no errors. Plotting now!" />
     <MESSAGE value="Beginning debugging - code is finished." />
@@ -521,37 +527,38 @@
     <MESSAGE value="Whoops. Process finished with exit code -1073741819 (0xC0000005)" />
     <MESSAGE value="Ran a few minor tests. Generated an almost 10 mb file. Current program working as expected. Currently studying some of the code that I don't understand as much but is required for it to work." />
     <MESSAGE value="Removed 21 outdated sky maps. Generated new one for current time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed 21 outdated sky maps. Generated new one for current time." />
+    <MESSAGE value="Fixed A MAJOR ERROR that went unnoticed - had some stray lines left from plot." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed A MAJOR ERROR that went unnoticed - had some stray lines left from plot." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1607441317694">
+    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1607448101119">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607441317694" />
+    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607448101119" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="746" height="167" key="GridCell.Tab.0.bottom" timestamp="1607441273702">
+    <state width="747" height="166" key="GridCell.Tab.0.bottom" timestamp="1607441420939">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="167" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607441273702" />
-    <state width="746" height="167" key="GridCell.Tab.0.center" timestamp="1607441273702">
+    <state width="747" height="166" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607441420939" />
+    <state width="747" height="166" key="GridCell.Tab.0.center" timestamp="1607441420939">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="167" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607441273702" />
-    <state width="746" height="167" key="GridCell.Tab.0.left" timestamp="1607441273701">
+    <state width="747" height="166" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607441420939" />
+    <state width="747" height="166" key="GridCell.Tab.0.left" timestamp="1607441420939">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="167" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607441273701" />
-    <state width="746" height="167" key="GridCell.Tab.0.right" timestamp="1607441273702">
+    <state width="747" height="166" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607441420939" />
+    <state width="747" height="166" key="GridCell.Tab.0.right" timestamp="1607441420939">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="746" height="167" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607441273702" />
+    <state width="747" height="166" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607441420939" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -568,18 +575,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="746" height="70" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1607309417103" />
-    <state x="277" y="75" key="SettingsEditor" timestamp="1606787907256">
+    <state x="277" y="75" key="SettingsEditor" timestamp="1607447762569">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1606787907256" />
+    <state x="277" y="75" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1607447762569" />
     <state x="722" y="154" key="Vcs.Push.Dialog.v2" timestamp="1607134957372">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="722" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1607134957372" />
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607438756542">
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog" timestamp="1607447367679">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607438756542" />
+    <state x="755" y="0" width="781" height="864" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1607447367679" />
     <state x="951" y="122" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1607110641143">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
