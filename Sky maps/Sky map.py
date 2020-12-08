@@ -197,7 +197,7 @@ for body_name, body_colour in zip(SOLSYS_DICT, BODY_COLOUR_ARRAY):
 
 # Plot the Ecliptic plane as a blue dotted line
 plt.plot(eclip_plane_df['j2000_long_rad4plot'], \
-         eclip_plane_df['j2000_lat_rad'], \
+         eclip_plane_df['j2000_lat_rad'], color='tab:blue', linestyle='None',  \
          marker='o', markersize=2)
 
 # Convert the longitude values finally in right ascension hours
