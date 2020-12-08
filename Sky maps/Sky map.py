@@ -215,4 +215,4 @@ plt.legend()
 plt.grid(True)
 
 #Save it!
-plt.savefig('Sky maps with declination and hours/%s_j2000_sky_map.png' % MAP_TITLE, dpi=5000)
+plt.savefig('Sky maps with declination and hours/%s_j2000_sky_map.png' % MAP_TITLE, dpi=400)
