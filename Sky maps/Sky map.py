@@ -66,7 +66,7 @@ for body_name in SOLSYS_DICT:
 
 # Create a sky map of the results
 
-# Set a dark bakground (The night sky is ... dark)
+# Set a dark background (The night sky is ... dark)
 plt.style.use('dark_background')
 
 # Create a figure than apply the aitoff projection
