@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Jupiter Saturn Alignment/Jupiter Phase Angle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jupiter Saturn Alignment/Jupiter Saturn Alignment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Jupiter Saturn Alignment/kernel_meta.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sky maps/Sky map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sky maps/Sky map.py" afterDir="false" />
-    </list>
+    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606786168288</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Render of the plot">
-      <created>1607115564606</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1607115564606</updated>
     </task>
     <task id="LOCAL-00002" summary="Render of the plot">
       <created>1607134173063</created>
@@ -523,13 +510,19 @@
       <option name="project" value="LOCAL" />
       <updated>1607528877578</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Made new project to see when Jupiter and Saturn align. The first alignment seems correct, but I don't know if the project is accurate.">
+      <created>1607706968492</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1607706968492</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Finished Debugging! It works! - Note: saved at higher resolution than normal (400 dpi instead of 300). Beginning anylsis of data." />
     <MESSAGE value="Repushing - no changes but workspace.xml" />
     <MESSAGE value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
     <MESSAGE value="Finished Venus photos project - beginning new project" />
@@ -554,37 +547,38 @@
     <MESSAGE value="Mild formatting" />
     <MESSAGE value="New Project." />
     <MESSAGE value="Minor changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes." />
+    <MESSAGE value="Made new project to see when Jupiter and Saturn align. The first alignment seems correct, but I don't know if the project is accurate." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made new project to see when Jupiter and Saturn align. The first alignment seems correct, but I don't know if the project is accurate." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1607115458794" />
-    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1607528875683">
+    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1607706967755">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607528875683" />
+    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1607706967755" />
     <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1606786504490">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1606786504490" />
-    <state width="1515" height="100" key="GridCell.Tab.0.bottom" timestamp="1607706845358">
+    <state width="1515" height="100" key="GridCell.Tab.0.bottom" timestamp="1607706971278">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="100" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607706845358" />
-    <state width="1515" height="100" key="GridCell.Tab.0.center" timestamp="1607706845358">
+    <state width="1515" height="100" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1607706971278" />
+    <state width="1515" height="100" key="GridCell.Tab.0.center" timestamp="1607706971277">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="100" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607706845358" />
-    <state width="1515" height="100" key="GridCell.Tab.0.left" timestamp="1607706845358">
+    <state width="1515" height="100" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1607706971277" />
+    <state width="1515" height="100" key="GridCell.Tab.0.left" timestamp="1607706971277">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="100" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607706845358" />
-    <state width="1515" height="100" key="GridCell.Tab.0.right" timestamp="1607706845358">
+    <state width="1515" height="100" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1607706971277" />
+    <state width="1515" height="100" key="GridCell.Tab.0.right" timestamp="1607706971277">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1515" height="100" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607706845358" />
+    <state width="1515" height="100" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1607706971277" />
     <state width="746" height="70" key="GridCell.Tab.1.bottom" timestamp="1607309417103">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
