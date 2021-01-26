@@ -38,3 +38,29 @@ def download_kernel(dl_path, dl_url):
         # Download the file with the urllib  package
         urllib.request.urlretrieve(dl_url, dl_path + file_name)
 
+
+# Download the asteroids spk kernel file. First, set a download path, then
+# the url and call the download function
+PATH = '../_kernels/spk/'
+URL = 'https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/asteroids/' \
+      + 'codes_300ast_20100725.bsp'
+
+download_kernel(PATH, URL)
+
+# Download an auxiliary file from the repository that contains the NAIF ID
+# codes and a reference frame kernel that is needed. Since we have a mixture
+# of different kernel types we store the data in a sub-directory called _misc
+PATH = '../_kernels/_misc/'
+URL = 'https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/asteroids/' \
+      + 'codes_300ast_20100725.tf'
+
+download_kernel(PATH, URL)
+
+# Load the SPICE kernels via a meta file
+spiceypy.furnsh('kernel_meta.txt')
+
+# Create an initial date-time object that is converted to a string
+DATETIME_UTC = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
+
+# Convert to Ephemeris Time (ET) using the SPICE function utc2et
+DATETIME_ET = spiceypy.utc2et(DATETIME_UTC)
