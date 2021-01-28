@@ -46,4 +46,13 @@ CERES_PERIHELION_AU = spiceypy.convrt(CERES_ORBITAL_ELEMENTS[0], \
 # Set the eccentricity
 CERES_ECC = CERES_ORBITAL_ELEMENTS[1]
 
-# Set and convert miscellaneous angular values from raidians
+# Set and convert miscellaneous angular values from radians
+# inc: Inclination
+# lnode: Longitude of ascending node
+# argp: Argument of perihelion
+CERES_INC_DEG = np.degrees(CERES_ORBITAL_ELEMENTS[2])
+CERES_LNODE_DEG = np.degrees(CERES_ORBITAL_ELEMENTS[3])
+CERES_ARGP_DEG = np.degrees(CERES_ORBITAL_ELEMENTS[4])
+
+# Set the orbit period. Convert from seconds to years.
+CERES_ORB_TIME_YEARS = CERES_ORBITAL_ELEMENTS[10] / {86400.0 * 365.0}
