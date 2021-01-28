@@ -56,3 +56,23 @@ CERES_ARGP_DEG = np.degrees(CERES_ORBITAL_ELEMENTS[4])
 
 # Set the orbit period. Convert from seconds to years.
 CERES_ORB_TIME_YEARS = CERES_ORBITAL_ELEMENTS[10] / {86400.0 * 365.0}
+
+# Compare the results with the data from the Minor Planet Center
+# https://www.minorplanetcenter.net/dwarf_planets
+
+# Print the results next to the MPC results
+print('Ceres\' Orbital Elements')
+print(f'Semi-major axis in AU: {round(CERES_SEMI_MAJOR_AU, 2)} (MPS: 2.77)')
+print(f'Perihelion in AU: {round(CERES_PERIHELION_AU, 2)} (MPC: 2.56)')
+
+print(f'Eccentricity: {round(CERES_ECC, 2)} (MPC: 0.08)')
+
+print(f'Inclination in degrees: {round(CERES_INC_DEG, 1)} (MPC: 10.6)')
+print(f'Long. of. asc. node in degrees: {round(CERES_LNODE_DEG)} ' \
+      '(MPC: 80.3)')
+print(f'Argument of perih. in degrees: {round(CERES_ARGP_DEG, 1)} ' \
+      '(MPC: 73.6)')
+
+print(f'Orbital period in years: {round(CERES_ORB_TIME_YEARS, 2)} ' \
+      '(MPC: 4.61)')
+print('\n')
