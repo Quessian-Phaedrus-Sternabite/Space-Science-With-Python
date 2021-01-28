@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_kernels/_misc/codes_300ast_20100725.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Derive orbital elements/Derive orbital elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/Derive orbital elements/Derive orbital elements.py" afterDir="false" />
-    </list>
+    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,16 +38,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\_kernels\_misc" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Sky maps\Sky maps with declination and hours" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final\_kernels" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Derive orbital elements">
@@ -244,20 +240,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606786168288</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Render of the plot">
-      <created>1607134950729</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1607134950729</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updating Barycentre influences">
-      <created>1607137895347</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1607137895347</updated>
     </task>
     <task id="LOCAL-00005" summary="Finished VIS_SSB_INFLUENCES.py">
       <created>1607145544846</created>
@@ -588,14 +570,26 @@
       <option name="project" value="LOCAL" />
       <updated>1611689769841</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Established base code">
+      <created>1611758560933</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1611758560934</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Pushing LARGE (61 MB) file. Be warned.">
+      <created>1611758640060</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1611758640060</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Created 3 year-long graphs, as well as one EXTREMELY long graph of DEC 2020 to JUN 2023" />
-    <MESSAGE value="Finished Venus photos project - beginning new project" />
     <MESSAGE value="Created sky map project: began work on setup." />
     <MESSAGE value="Created pandas dataframe and began establishing calculations." />
     <MESSAGE value="Minor debugging - fixed all errors. Finished converting latitde and longitude to radians and stored in DataFrame." />
@@ -619,7 +613,9 @@
     <MESSAGE value="Minor changes." />
     <MESSAGE value="Made new project to see when Jupiter and Saturn align. The first alignment seems correct, but I don't know if the project is accurate." />
     <MESSAGE value="#Created new project: Derive orbital elements.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="#Created new project: Derive orbital elements.py" />
+    <MESSAGE value="Established base code" />
+    <MESSAGE value="Pushing LARGE (61 MB) file. Be warned." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pushing LARGE (61 MB) file. Be warned." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607115458794">
@@ -630,14 +626,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="478" y="235" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1611758596629" />
-    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1611758559414">
+    <state x="0" y="40" key="CommitChangelistDialog2" timestamp="1611758638305">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1611758559414" />
-    <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1607828848430">
+    <state x="0" y="40" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1611758638305" />
+    <state x="548" y="187" key="FileChooserDialogImpl" timestamp="1611758676182">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1607828848430" />
+    <state x="548" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1611758676182" />
     <state width="814" height="100" key="GridCell.Tab.0.bottom" timestamp="1611690068750">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
