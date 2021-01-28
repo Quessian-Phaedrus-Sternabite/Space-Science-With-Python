@@ -22,3 +22,12 @@ print('Transformation matrix between ECLIPJ000_DE405 and ECLIPJ2000')
 for mat_row in MAT:
     print(f'{(np.round(mat_row, 2) + 0)}')
 print('\n')
+
+CERES_STATE_VECTOR, _ = spiceypy.spkgeo(targ=2000001, \
+                                        et=DATETIME_ET, \
+                                        ref='ECLIPJ2000', \
+                                        obs=10)
+
+_, GM_SUN_PRE = spiceypy.bodvcd(bodyid=10, item='GM', maxn=1)
+
+GM_SUN = GM_SUN_PRE[0]
