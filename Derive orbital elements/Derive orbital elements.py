@@ -31,3 +31,19 @@ CERES_STATE_VECTOR, _ = spiceypy.spkgeo(targ=2000001, \
 _, GM_SUN_PRE = spiceypy.bodvcd(bodyid=10, item='GM', maxn=1)
 
 GM_SUN = GM_SUN_PRE[0]
+
+# Compute the orbital elements of Ceres using the computed state vector
+CERES_ORBITAL_ELEMENTS = spiceypy.oscltx(state=CERES_STATE_VECTOR, \
+                                         et=DATETIME_ET, \
+                                         mu=GM_SUN)
+
+# Set and convert the semi-major axis and perihelion from km to AU
+CERES_SEMI_MAJOR_AU = spiceypy.convrt(CERES_ORBITAL_ELEMENTS[9], \
+                                      inunit='km', outunit='AU')
+CERES_PERIHELION_AU = spiceypy.convrt(CERES_ORBITAL_ELEMENTS[0], \
+                                      inunit='km', outunit='AU')
+
+# Set the eccentricity
+CERES_ECC = CERES_ORBITAL_ELEMENTS[1]
+
+# Set and convert miscellaneous angular values from raidians
