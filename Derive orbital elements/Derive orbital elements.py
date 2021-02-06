@@ -6,14 +6,17 @@ import os
 
 import numpy as np
 import spiceypy
-
-#%%
-
-spiceypy.furnsh('../_kernels/spk/de432s.bsp')
-spiceypy.furnsh('../_kernels/spk/codes_300ast_20100725.bsp')
-spiceypy.furnsh('../_kernels/_misc/codes_300ast_20100725.tf')
+"""
 spiceypy.furnsh('../_kernels/lsk/naif0012.tls')
 spiceypy.furnsh('../_kernels/pck/gm_de431.tpc')
+spiceypy.furnsh('../_kernels/spk/codes_300ast_20100725.bsp')
+spiceypy.furnsh('../_kernels/_misc/codes_300ast_20100725.tf')
+spiceypy.furnsh('../_kernels/spk/de432s.bsp')
+"""
+spiceypy.furnsh('meta.txt')
+
+x = spiceypy.ktotal("ALL")
+print(x)
 
 # Create an initial date-time object that is converted to a string
 DATETIME_UTC = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%S')
@@ -44,7 +47,6 @@ CERES_STATE_VECTOR, _ = spiceypy.spkgeo(targ=2000001, \
                                         et=DATETIME_ET, \
                                         ref='ECLIPJ2000',
                                         obs=10)
-
 #%%
 
 # Get the G*M value for the Sun
