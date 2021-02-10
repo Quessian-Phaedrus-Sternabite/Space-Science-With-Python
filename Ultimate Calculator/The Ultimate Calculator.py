@@ -15,8 +15,8 @@ def menu():
 6. Orbital satellite height calculator 
 7. Orbital speed calculator 
 8. Orbital Period Earth Calculator 
-9. Orbital Period Calculator\n
-''')
+9. Orbital Period Calculator
+10. Sphere of Influence (SOI)\n''')
     if choice == "1":
         srcalc()
     if choice == "2":
@@ -35,6 +35,8 @@ def menu():
         opecalc()
     if choice == "9":
         opcalc()
+    if choice == "10":
+        soicalc()
 
 
 def srcalc():
@@ -200,6 +202,8 @@ def opcalc():
     # testing  -  5970000000000000000000000
     print("The orbital period is " + str(t) + "")
 
+def soicalc():
+    a = float(input("Please input major axis of celestially body. "))
 
 if __name__ == "__main__":
     menu()
