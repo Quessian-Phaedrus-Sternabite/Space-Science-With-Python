@@ -1,6 +1,6 @@
 import scipy
 import math
-import numpy
+import numpy as np
 from math import sqrt
 from scipy.constants import G
 from math import sin, cos, pi
@@ -81,7 +81,7 @@ def recalc():
 
         a = float(input("Exhaust velocity (m/s): "))
 
-        b = numpy.log(sm / fm)
+        b = np.log(sm / fm)
 
         dv = float(a) * float(b)
 
@@ -203,7 +203,11 @@ def opcalc():
     print("The orbital period is " + str(t) + "")
 
 def soicalc():
-    a = float(input("Please input major axis of celestially body. "))
+    a = float(input("Please input semimajor axis of the smaller bodies orbit: "))
+    m = float(input("Please input mass of the smaller body: "))
+    M = float(input("Please input mass of the larger body: "))
+    SOI = np.round(a * ((m / M) ** 2/5))
+    print(f"The Sphere of influence is: {SOI:f} metres.")
 
 if __name__ == "__main__":
     menu()
