@@ -104,3 +104,38 @@ print('State vector of Ceres from the kernel:\n'
 print('State vector of Ceres based on the determined orbital elements:\n'
       f'{CERES_STATE_RE}')
 print('\n')
+
+# On spaceweather.com we can see that an asteroid has a close Earth fly-by:
+# 136795(1997BQ) on 2020-May-21 at a distance of 16.1 Lunar Distance
+#
+# Will the encounter alter the orbit of the asteroid? Let's have a first look
+# on the so-called sphere of influence (SOI) of our planet.
+# A simple model assumes that the SOI is a sphere. The semi major axis is set
+# to 1 AU:
+
+# 1 AU in km
+ONE_AU = spiceypy.convrt(x=1, inunit='AU', outunit='km')
+
+# Set the G*M parameter of our planet
+_, GM_EARTH_PRE = spiceypy.bodvcd(bodyid=399, item='GM', maxn=1)
+GM_EARTH = GM_EARTH_PRE[0]
+
+# Compute the SOI radius of the Earth
+SOI_EARTH_R = ONE_AU * (GM_EARTH/GM_SUN) ** (2.0/5.0)
+
+# Set one Lunar Distance (LD) in km (value from spaceweather.com)
+ONE_LD = 384401.0
+
+print(f'SOI of the Earth in LD: {SOI_EARTH_R/ONE_LD}')
+print('\n')
+
+# Now we can compute the current position of the object. We obtain the orbit
+# elements data from https://ssd.jpl.nasa.gov/sbdb.cgi?sstr=136795
+
+# Before we compute a state vector of the asteroid and the current distance
+# to our home planet we need to define a function to round the data. A common
+# convention for scientific work is to round the data to two significant
+# digits. We create a lambda function that rounds the values based on the
+# provided measurement error
+round_sig = lambda value, err: np.round(value, \
+                                        -1*(int(np.floor(np.log10(err))))+1)
