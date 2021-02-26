@@ -99,7 +99,7 @@ CERES_STATE_RE = spiceypy.conics([CERES_ORBITAL_ELEMENTS[0],
                                   CERES_ORBITAL_ELEMENTS[6],
                                   GM_SUN], DATETIME_ET)
 
-print('State vector of Ceres from the kernel:\n' 
+print('State vector of Ceres from the kernel:\n'
       f'{CERES_STATE_VECTOR}')
 print('State vector of Ceres based on the determined orbital elements:\n'
       f'{CERES_STATE_RE}')
@@ -121,12 +121,12 @@ _, GM_EARTH_PRE = spiceypy.bodvcd(bodyid=399, item='GM', maxn=1)
 GM_EARTH = GM_EARTH_PRE[0]
 
 # Compute the SOI radius of the Earth
-SOI_EARTH_R = ONE_AU * (GM_EARTH/GM_SUN) ** (2.0/5.0)
+SOI_EARTH_R = ONE_AU * (GM_EARTH / GM_SUN) ** (2.0 / 5.0)
 
 # Set one Lunar Distance (LD) in km (value from spaceweather.com)
 ONE_LD = 384401.0
 
-print(f'SOI of the Earth in LD: {SOI_EARTH_R/ONE_LD}')
+print(f'SOI of the Earth in LD: {SOI_EARTH_R / ONE_LD}')
 print('\n')
 
 # Now we can compute the current position of the object. We obtain the orbit
@@ -137,5 +137,51 @@ print('\n')
 # convention for scientific work is to round the data to two significant
 # digits. We create a lambda function that rounds the values based on the
 # provided measurement error
-round_sig = lambda value, err: np.round(value, \
-                                        -1*(int(np.floor(np.log10(err))))+1)
+round_sig = lambda value, err: np.round(value,
+                                        -1 * (int(np.floor(np.log10(err)))) + 1)
+
+# Set perihelion in km
+NEO_1997BQ_PERIHELION_KM = spiceypy.convrt(round_sig(0.9109776989775201,
+                                                     9.5537e-08),
+                                           inunit='AU', outunit='km')
+
+# Set the eccentricity
+NEO_1997BQ_ECC = round_sig(0.4786097161397527, 5.364e-08)
+
+# Set the inclination, longitude of ascending node, and argument of periapsis
+# in radians
+NEO_1997BQ_INC_RAD = np.radians(round_sig(10.99171566990081, 7.6286e-06))
+NEO_1997BQ_LNODE_RAD = np.radians(round_sig(50.19104637224941, 3.6206e-05))
+NEO_1997BQ_ARGP_RAD = np.radians(round_sig(147.4553849006326, 3.6033e-05))
+
+# Set the mean anomaly and corresponding epoch in Julian Date (JD)
+NEO_1997BQ_MO_AT_TO_RAD = np.radians(round_sig(17.87249899172771, 1.0297e-05))
+NEO_1997BQ_TO = spiceypy.utc2et('2459000.5 JD ')
+
+# Set the orbital elements array
+NEO_1997BQ_ORBITAL_ELEMENTS = [NEO_1997BQ_PERIHELION_KM,
+                               NEO_1997BQ_ECC,
+                               NEO_1997BQ_INC_RAD,
+                               NEO_1997BQ_LNODE_RAD,
+                               NEO_1997BQ_ARGP_RAD,
+                               NEO_1997BQ_MO_AT_TO_RAD,
+                               NEO_1997BQ_TO,
+                               GM_SUN]
+
+# Compute the state vector
+NEO_1997BQ_STATE_VECTOR = spiceypy.conics(NEO_1997BQ_ORBITAL_ELEMENTS, DATETIME_ET)
+
+print(f'Current state vector of 1997BQ in km and km/s ({DATETIME_UTC}))):\n'
+      f'{NEO_1997BQ_STATE_VECTOR}')
+print('\n')
+
+EARTH_STATE_VECTOR, _ = spiceypy.spkgeo(targ=399,
+                                         et=DATETIME_ET,
+                                         ref='ECLIPJ2000',
+                                         obs=10)
+
+# Compute the current distance of the Earth and the asteroids in LD
+EARTH_1997BQ_DIST_KM = spiceypy.vnorm(EARTH_STATE_VECTOR[:3]
+                                      - NEO_1997BQ_STATE_VECTOR[:3])
+print(f'Current distance between the Earth and 1997BQ ({DATETIME_UTC}):\n'
+      f'{EARTH_1997BQ_DIST_KM / ONE_LD} LD')
