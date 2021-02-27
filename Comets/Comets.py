@@ -91,7 +91,7 @@ HALE_BOPP_ORB_ELEM = [spiceypy.convrt(HALE_BOPP_DF['Perihelion_dist']
 HALE_BOPP_ST_VEC = spiceypy.conics(HALE_BOPP_ORB_ELEM,
                                    spiceypy.utc2et('2020-05-10'))
 
-# WARNING - THE COMPARISONS ARE FOR 2020-05-10. You may adjust the date to your choosing.
+# Getting a strange error. I am currently not able to work the horizons interface
 # Compare with results from https://ssd.jpl.nasa.gov/horizons.cgi
 print('Comparison of the computed state \n'
       'vector with the NASA HORIZONS results')
