@@ -64,3 +64,92 @@ c_df.loc[:, 'EPOCH_UTC'] = c_df.apply(lambda x: x['EPOCH_UTC_DATE']
 
 # Convert the UTC datetieme to ET
 c_df.loc[:, 'EPOCH_ET'] = c_df['EPOCH_UTC'].apply(lambda x: spiceypy.utc2et(x))
+
+# Let us compute a state vector of the comet Hale-Bopp as an example.
+
+# Extract the G*M value of the Sun and assign it to a constant.
+_, GM_SUN_PRE = spiceypy.bodvcd(bodyid=10, item='GM', maxn=1)
+GM_SUN = GM_SUN_PRE[0]
+
+# Get the Hale-Bopp data
+HALE_BOPP_DF = c_df.loc[c_df['Designation_and_name'].str.contains('Hale-Bopp')]
+
+# Set an array with orbital elements in a required format for the conics
+# function. Note: the mean anomaly is 0 degrees and will be set as a default
+# value in the SQLite database.
+HALE_BOPP_ORB_ELEM = [spiceypy.convrt(HALE_BOPP_DF['Perihelion_dist']
+                                      .iloc[0], 'AU', 'km'),
+                      HALE_BOPP_DF['e'].iloc[0],
+                      np.radians(HALE_BOPP_DF['i'].iloc[0]),
+                      np.radians(HALE_BOPP_DF['Node'].iloc[0]),
+                      np.radians(HALE_BOPP_DF['Peri'].iloc[0]),
+                      0.0,
+                      HALE_BOPP_DF['EPOCH_ET'].iloc[0],
+                      GM_SUN]
+
+# Compute the state vector for midnight 2020-05-10 (Change this later to 2020-26-2)
+HALE_BOPP_ST_VEC = spiceypy.conics(HALE_BOPP_ORB_ELEM,
+                                   spiceypy.utc2et('2020-05-10'))
+
+# WARNING - THE COMPARISONS ARE FOR 2020-05-10. You may adjust the date to your choosing.
+# Compare with results from https://ssd.jpl.nasa.gov/horizons.cgi
+print('Comparison of the computed state \n'
+      'vector with the NASA HORIZONS results')
+print('==========================================')
+print(f'X in km (Comp): {HALE_BOPP_ST_VEC[0]:e}')
+print('X in km (NASA): 5.348377806424425E+08')
+print('==========================================')
+print(f'Y in km (Comp): {HALE_BOPP_ST_VEC[1]:e}')
+print('Y in km (NASA): -2.702225247057124E+09')
+print('==========================================')
+print(f'Z in km (Comp): {HALE_BOPP_ST_VEC[2]:e}')
+print('Z in km (NASA): -5.904425343521862E+09')
+print('==========================================')
+print(f'VX in km/s (Comp): {HALE_BOPP_ST_VEC[3]:e}')
+print('VX in km/s (NASA): 6.857065492623227E-01')
+print('==========================================')
+print(f'VY in km/s (Comp): {HALE_BOPP_ST_VEC[4]:e}')
+print('VY in km/s (NASA): -3.265390887669909E+00')
+print('==========================================')
+print(f'VZ in km/s (Comp): {HALE_BOPP_ST_VEC[5]:e}')
+print('VZ in km/s (NASA): -3.265390887669909E+00')
+
+# Compute the semi-major axis for closed orbits...
+c_df.loc[:, 'SEMI_MAJOR_AXIS_AU'] = \
+    c_df.apply(lambda x: x['Perihelion_dist'] / (1.0 - x['e']) if x['e'] < 1
+                         else np.nan,
+               axis=1)
+
+# ... as well as the apohelion (if applicable)
+c_df.loc[:, 'APHELION_AU'] = \
+    c_df.apply(lambda x: (1.0 + x['e']) * x['SEMI_MAJOR_AXIS_AU'] \
+                         if x['e'] < 1 else np.nan, \
+               axis=1)
+
+# Create a sub-directory in the main directory of this repository, where a
+# comet database shall be stored
+pathlib.Path('../_databases/_comets/').mkdir(parents=True, exist_ok=True)
+
+# Create / Connect to a commet database and set the cursor
+con = sqlite3.connect('../_databases/_comets/mpc_comets.db')
+cur = con.cursor()
+
+# Create (if not existing) a comets' main table, where miscellaneous
+# parameters are stored
+cur.execute('CREATE TABLE IF NOT EXISTS '
+            'comets_main(NAME TEXT PRIMARY KEY, '
+            'ORBIT_TYPE TEXT, '
+            'PERIHELION_AU REAL, '
+            'SEMI_MAJOR_AXIS_AU REAL, '
+            'APOHELION_AU REAL, '
+            'ECCENTRICITY REAL, '
+            'INCLINATION REAL, '
+            'ARG_OF_PERIH_DEG REAL, '
+            'LONG_OF_ASC_NODE_DEG REAL, '
+            'MEAN_ANOMALY_DEG REAL DEFAULT 0.0, '
+            'EPOCH_UTC TEXT, '
+            'EPOCH_ET REAL, '
+            'ABSOLUTE_MAGNITUDE REAL, '
+            'SLOPE_PARAMETER REAL'
+                        ')')
+
