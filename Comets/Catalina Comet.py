@@ -92,7 +92,8 @@ CATALINA_ST_VEC = spiceypy.conics(CATALINA_ORB_ELEM,
                                    spiceypy.utc2et('2020-05-10'))
 
 
-
+"""
+Due to an error, the results from HORIZONS cannot be obtained.
 print(str(CATALINA_ST_VEC))
 
 print('Comparison of the computed state \n'
@@ -115,3 +116,4 @@ print('VY in km/s (NASA): 1.435125319086937E-02')
 print('==========================================')
 print(f'VZ in km/s (Comp): {CATALINA_ST_VEC[5]:e}')
 print('VZ in km/s (NASA): 2.084664617291287E-02')
+"""
