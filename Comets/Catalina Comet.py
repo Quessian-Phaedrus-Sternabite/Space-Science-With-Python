@@ -117,3 +117,64 @@ print('==========================================')
 print(f'VZ in km/s (Comp): {CATALINA_ST_VEC[5]:e}')
 print('VZ in km/s (NASA): 2.084664617291287E-02')
 """
+
+# Compute the semi-major axis for closed orbits...
+c_df.loc[:, 'SEMI_MAJOR_AXIS_AU'] = \
+    c_df.apply(lambda x: x['Perihelion_dist'] / (1.0 - x['e']) if x['e'] < 1
+    else np.nan,
+               axis=1)
+
+# ... as well as the aphelion (if applicable)
+c_df.loc[:, 'APHELION_AU'] = \
+    c_df.apply(lambda x: (1.0 + x['e']) * x['SEMI_MAJOR_AXIS_AU']
+    if x['e'] < 1 else np.nan,
+               axis=1)
+
+
+# Create / Connect to a comet database and set the cursor
+con = sqlite3.connect('../_databases/_comets/mpc_comets.db')
+cur = con.cursor()
+
+# Create (if not existing) a comets' main table, where miscellaneous
+# parameters are stored
+cur.execute('CREATE TABLE IF NOT EXISTS '
+            'comets_main(NAME TEXT PRIMARY KEY, '
+            'ORBIT_TYPE TEXT, '
+            'PERIHELION_AU REAL, '
+            'SEMI_MAJOR_AXIS_AU REAL, '
+            'APHELION_AU REAL, '
+            'ECCENTRICITY, '
+            'INCLINATION_DEG REAL, '
+            'ARG_OF_PERIH_DEG REAL, '
+            'LONG_OF_ASC_NODE_DEG REAL, '
+            'MEAN_ANOMALY_DEG REAL DEFAULT 0.0, '
+            'EPOCH_UTC TEXT, '
+            'EPOCH_ET REAL, '
+            'ABSOLUTE_MAGNITUDE REAL, '
+            'SLOPE_PARAMETER REAL'
+            ')')
+
+# Insert the data
+cur.executemany('INSERT INTO comets_main (NAME, ORBIT_TYPE, PERIHELION_AU, SEMI_MAJOR_AXIS_AU, APHELION_AU, '
+                'ECCENTRICITY, INCLINATION_DEG, ARG_OF_PERIH_DEG, LONG_OF_ASC_NODE_DEG, EPOCH_UTC, EPOCH_ET, '
+                'ABSOLUTE_MAGNITUDE, SLOPE_PARAMETER) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)',
+                c_df[['Designation_and_name',
+                      'Orbit_type',
+                      'Perihelion_dist',
+                      'SEMI_MAJOR_AXIS_AU',
+                      'APHELION_AU',
+                      'e',
+                      'i',
+                      'Peri',
+                      'Node',
+                      'EPOCH_UTC',
+                      'EPOCH_ET',
+                      'H',
+                      'G']].values)
+
+# Commit
+con.commit()
+
+# Close the database. The database shall be the fundament for the next
+# sessions
+con.close()
