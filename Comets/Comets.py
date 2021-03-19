@@ -45,7 +45,7 @@ c_df.loc[:, 'EPOCH_UTC_DATE'] = \
                axis=1)
 
 # Now we need to parse the .FRACTION_OF_DAY given between (0.0, 1.0). First,
-# Create a place-holder date
+# create a place-holder date
 PRE_TIME = datetime.datetime(year=2000, month=1, day=1)
 
 # Use the pre_time date-time object and add the days and fraction of days with
@@ -62,12 +62,12 @@ c_df.loc[:, 'EPOCH_UTC'] = c_df.apply(lambda x: x['EPOCH_UTC_DATE']
                                                 + x['EPOCH_UTC_TIME'],
                                       axis=1)
 
-# Convert the UTC datetieme to ET
+# Convert the UTC datetime to ET
 c_df.loc[:, 'EPOCH_ET'] = c_df['EPOCH_UTC'].apply(lambda x: spiceypy.utc2et(x))
 
-# Let us compute a state vector of the comet Hale-Bopp as an example.
+# Let's compute a state vector of the comet Hale-Bopp as an example
 
-# Extract the G*M value of the Sun and assign it to a constant.
+# Extract the G*M value of the Sun and assign it to a constant
 _, GM_SUN_PRE = spiceypy.bodvcd(bodyid=10, item='GM', maxn=1)
 GM_SUN = GM_SUN_PRE[0]
 
@@ -76,7 +76,7 @@ HALE_BOPP_DF = c_df.loc[c_df['Designation_and_name'].str.contains('Hale-Bopp')]
 
 # Set an array with orbital elements in a required format for the conics
 # function. Note: the mean anomaly is 0 degrees and will be set as a default
-# value in the SQLite database.
+# value in the SQLite database
 HALE_BOPP_ORB_ELEM = [spiceypy.convrt(HALE_BOPP_DF['Perihelion_dist']
                                       .iloc[0], 'AU', 'km'),
                       HALE_BOPP_DF['e'].iloc[0],
@@ -87,11 +87,10 @@ HALE_BOPP_ORB_ELEM = [spiceypy.convrt(HALE_BOPP_DF['Perihelion_dist']
                       HALE_BOPP_DF['EPOCH_ET'].iloc[0],
                       GM_SUN]
 
-# Compute the state vector for midnight 2020-05-10 (Change this later to 2020-26-2)
+# Compute the state vector for midnight 2020-05-10
 HALE_BOPP_ST_VEC = spiceypy.conics(HALE_BOPP_ORB_ELEM,
                                    spiceypy.utc2et('2020-05-10'))
 
-# Getting a strange error. I am currently not able to work the horizons interface
 # Compare with results from https://ssd.jpl.nasa.gov/horizons.cgi
 print('Comparison of the computed state \n'
       'vector with the NASA HORIZONS results')
@@ -114,13 +113,13 @@ print('==========================================')
 print(f'VZ in km/s (Comp): {HALE_BOPP_ST_VEC[5]:e}')
 print('VZ in km/s (NASA): -3.265390887669909E+00')
 
-# Compute the semi-major axis for closed orbits...
+# Compute the semi-major axis for closed orbits ...
 c_df.loc[:, 'SEMI_MAJOR_AXIS_AU'] = \
     c_df.apply(lambda x: x['Perihelion_dist'] / (1.0 - x['e']) if x['e'] < 1
     else np.nan,
                axis=1)
 
-# ... as well as the aphelion (if applicable)
+# ... as well as the APHELION (if applicable)
 c_df.loc[:, 'APHELION_AU'] = \
     c_df.apply(lambda x: (1.0 + x['e']) * x['SEMI_MAJOR_AXIS_AU']
     if x['e'] < 1 else np.nan,
@@ -188,5 +187,5 @@ cur.executemany('INSERT OR REPLACE INTO '
 con.commit()
 
 # Close the database. The database shall be the fundament for the next
-# sessions
+# tutorial sessions
 con.close()
