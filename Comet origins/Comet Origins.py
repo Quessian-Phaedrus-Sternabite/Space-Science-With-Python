@@ -20,5 +20,3 @@ P_TYPE_DF = pd.read_sql('SELECT APHELION_AU, INCLINATION_DEG '
 # ... and C type comets. For this type: include also the eccentricity
 C_TYPE_DF = pd.read_sql('SELECT APHELION_AU, INCLINATION_DEG, ECCENTRICITY '
                         'FROM comets_main WHERE ORBIT_TYPE="C"', CON)
-
-
