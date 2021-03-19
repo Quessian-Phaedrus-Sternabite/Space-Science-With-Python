@@ -7,35 +7,35 @@ from math import sin, cos, pi
 
 
 def menu():
-    choice = input('''1: Schwarzschild Radius Calculator 
-2: Escape Velocity Calculator [WIP Major error] 
-3: Rocket Equation Calculator 
-4: Trajectory calculator 
-5. Drop energy calculator 
-6. Orbital satellite height calculator 
-7. Orbital speed calculator 
-8. Orbital Period Earth Calculator 
+    choice = input('''1: Schwarzschild Radius Calculator
+2: Escape Velocity Calculator [WIP Major error]
+3: Rocket Equation Calculator
+4: Trajectory calculator
+5. Drop energy calculator
+6. Orbital satellite height calculator
+7. Orbital speed calculator
+8. Orbital Period Earth Calculator
 9. Orbital Period Calculator
 10. Sphere of Influence (SOI)\n''')
     if choice == "1":
         srcalc()
-    if choice == "2":
+    elif choice == "2":
         evcalc()
-    if choice == "3":
+    elif choice == "3":
         recalc()
-    if choice == "4":
+    elif choice == "4":
         tcalc2()
-    if choice == "5":
+    elif choice == "5":
         dcalc()
-    if choice == "6":
+    elif choice == "6":
         ocalc()
-    if choice == "7":
+    elif choice == "7":
         oscalc()
-    if choice == "8":
+    elif choice == "8":
         opecalc()
-    if choice == "9":
+    elif choice == "9":
         opcalc()
-    if choice == "10":
+    elif choice == "10":
         soicalc()
 
 

@@ -23,6 +23,7 @@ C_TYPE_DF = pd.read_sql('SELECT APHELION_AU, INCLINATION_DEG, ECCENTRICITY '
                         'FROM comets_main WHERE ORBIT_TYPE="C"', CON)
 
 
+
 # Print some descriptive statistics of the P type comets
 print('Descriptive statistics of P comets')
 print(f'{P_TYPE_DF.describe()}')
