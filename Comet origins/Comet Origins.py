@@ -87,3 +87,68 @@ for lh in leg.legendHandles:
 # Save the plot in high quality
 plt.savefig('comets_scatter_plot_Q_i.png', dpi=400)
 
+# It appears that the aphelion and inclination values of the C comets are more
+# dispersed than the P comet values. P comets are more "concentrated" in the
+# inner part of the Solar System. Since we will have a closer look on P comets
+# another time, let's have a look at the inclination distribution of the
+# comets.
+#
+# "From which direction do they come from" (w.r.t. ECLIPJ2000)?
+
+# We analyse the complete inclination definition range. So let's set an array
+# that covers 0 to 180 degrees
+INCL_RANGE = np.linspace(0, 180, 1000)
+
+# Two plots will be created. First: a histogram. A rule-of-thumb is defined in
+# this lambda function: the floor value of the square-root of the total number
+# of observations is used
+nr_of_bins = lambda data_array: int(np.floor(np.sqrt(len(data_array))))
+
+# Second: To derive a continuous distribution a Kernel-Density Estimator (KDE)
+# is used. We apply the standard settings. Import the scipy module first
+from scipy import stats
+
+# Kernel and distribution computation for the P type comets
+P_TYPE_INC_KERNEL = stats.gaussian_kde(P_TYPE_DF['INCLINATION_DEG'])
+P_TYPE_INC_DISTR = P_TYPE_INC_KERNEL(INCL_RANGE)
+
+# Kernel and distribution computation for the C type comets
+C_TYPE_INC_KERNEL = stats.gaussian_kde(C_TYPE_DF['INCLINATION_DEG'])
+C_TYPE_INC_DISTR = C_TYPE_INC_KERNEL(INCL_RANGE)
+
+# Create a figure and axis
+fig, ax = plt.subplots(figsize=(12, 8))
+
+# Histogram of the P and C type comets' inclination.
+ax.hist(P_TYPE_DF['INCLINATION_DEG'],
+        bins=nr_of_bins(P_TYPE_DF['INCLINATION_DEG']),
+        density=True, color='tab:orange', alpha=0.5, label='P Type')
+
+ax.hist(C_TYPE_DF['INCLINATION_DEG'],
+        bins=nr_of_bins(C_TYPE_DF['INCLINATION_DEG']),
+        density=True, color='tab:blue', alpha=0.5, label='C Type')
+
+# Plot the KDE of the P type comets
+ax.plot(INCL_RANGE, P_TYPE_INC_DISTR, color='tab:orange', alpha=1, linestyle='solid')
+
+# Plot the KDE of the C type comets
+ax.plot(INCL_RANGE, C_TYPE_INC_DISTR, color='tab:blue', alpha=1, linestyle='solid')
+
+# Set an x axis limits (inclination range)
+ax.set_xlim(0, 180)
+
+# Add a grid for better readability
+ax.grid(axis='both', linestyle='dashed', alpha=0.2)
+
+# Set an x and y label
+ax.set_xlabel('Inclination in degrees')
+ax.set_ylabel('Normalised Distribution')
+
+# Again: We re-define the opacity (alpha value) of the markers / lines in the
+# legend for better visibility
+leg = ax.legend(fancybox=True, loc='upper right', framealpha=1)
+for lh in leg.legendHandles:
+    lh.set_alpha(1)
+
+# Save the figure
+plt.savefig('comets_kde_incl_.png', dpi=400)
