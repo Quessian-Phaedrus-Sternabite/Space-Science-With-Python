@@ -20,8 +20,8 @@ C_TYPE_DF = pd.read_sql('SELECT PERIHELION_AU, SEMI_MAJOR_AXIS_AU, APHELION_AU, 
                         'EPOCH_ET, ABSOLUTE_MAGNITUDE, SLOPE_PARAMETER, TISSERAND_JUP FROM comets_main WHERE '
                         'ORBIT_TYPE="C"', con)
 
-P_PERI_MEAN = P_TYPE_DF["PERIHELION_AU"].mean()
-P_SEMI_MAJOR_MEAN = P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].mean()
+P_PERI_INFO = [P_TYPE_DF["PERIHELION_AU"].mean(), P_TYPE_DF["PERIHELION_AU"].median(), P_TYPE_DF["PERIHELION_AU"].mode(), P_TYPE_DF["PERIHELION_AU"].max(), P_TYPE_DF["PERIHELION_AU"].minimum()]
+P_SEMI_MAJOR_INFO = [P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].mean(), P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].median(), P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].mode(), P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].max(), P_TYPE_DF["SEMI_MAJOR_AXIS_AU"].minimum()]
 P_APH_MEAN = P_TYPE_DF["APHELION_AU"].mean()
 P_ECC_MEAN = P_TYPE_DF["ECCENTRICITY"].mean()
 P_INC_MEAN = P_TYPE_DF["INCLINATION_DEG"].mean()
@@ -47,7 +47,7 @@ C_SLOPE_MEAN = C_TYPE_DF["SLOPE_PARAMETER"].mean()
 C_TISS_MEAN = C_TYPE_DF["TISSERAND_JUP"].mean()
 
 print('P Type Comet Info \n ------------------------------------------------ \n')
-print(f'P-Type Perihelion AU Average: {P_PERI_MEAN}.\n'
+print(f'P-Type Perihelion AU Average: {P_PERI_INFO}.\n'
       f'P-Type Semi-Major Axis Average: {P_SEMI_MAJOR_MEAN}.\n'
       f'P-Type Aphelion AU Average: {P_APH_MEAN}.\n',
       f'P-Type Eccentricity Average: {P_ECC_MEAN}.\n',
