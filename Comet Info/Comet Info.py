@@ -36,7 +36,7 @@ for i in name:
     P_INFO.append(P_TYPE_DF[i])
     C_INFO.append(P_TYPE_DF[i])
 
-x = -1
+x = 0
 for i in P_INFO:
     print(name[x])
     print(f'The mean of {name[x]} - P is {i.mean()}')
@@ -46,12 +46,14 @@ for i in P_INFO:
     x += 1
     print("\n")
 
-x = -1
+print("---------------------------------------------------------------")
+
+x = 0
 for i in C_INFO:
     print(name[x])
-    x += 1
     print(f'The mean of {name[x]} - C is {i.mean()}')
     print(f'The median of {name[x]} - C is {i.median()}')
     print(f'The maximum of {name[x]} - C is {i.max()}')
     print(f'The minimum of {name[x]} - C is {i.min()}')
+    x += 1
     print("\n")
