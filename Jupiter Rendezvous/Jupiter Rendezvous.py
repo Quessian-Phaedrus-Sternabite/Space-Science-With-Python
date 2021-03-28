@@ -133,22 +133,22 @@ def add_col2tab(con_db, cur_db, tab_name, col_name, col_type):
 
     # If the column is not existing yet, add the new column
     else:
-        cur_db.execute(f'ALTER TABLE {tab_name} ' \
+        cur_db.execute(f'ALTER TABLE {tab_name} '
                        f'ADD COLUMN {col_name} {col_type}')
         con_db.commit()
 
 # Add a new column in the comets_main table for the Tisserand parameters
-add_col2tab(con_db=con, \
-            cur_db=cur, \
-            tab_name='comets_main', \
-            col_name='TISSERAND_JUP', \
+add_col2tab(con_db=con,
+            cur_db=cur,
+            tab_name='comets_main',
+            col_name='TISSERAND_JUP',
             col_type='REAL')
 
 # Add the Tisserand parameter results to the database
-cur.executemany('UPDATE comets_main SET TISSERAND_JUP=? WHERE NAME=?', \
+cur.executemany('UPDATE comets_main SET TISSERAND_JUP=? WHERE NAME=?',
                 P_TYPE_DF[['TISSERAND_JUP', 'NAME']].values)
 con.commit()
 
-cur.executemany('UPDATE comets_main SET TISSERAND_JUP=? WHERE NAME=?', \
+cur.executemany('UPDATE comets_main SET TISSERAND_JUP=? WHERE NAME=?',
                 C_TYPE_DF[['TISSERAND_JUP', 'NAME']].values)
 con.commit()
