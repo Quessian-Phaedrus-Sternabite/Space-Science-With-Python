@@ -1,6 +1,6 @@
 # Space-Science-With-Python
 These are my programs using SPICE, installed with spiceypy.
-Each project is indepent, and only requires its folder and the kernel folder.
+Mooost projects are independent, and only require the neccesary kernels (specified in the meta kernels). Others, such as the comet series, are dependent on others.
 Enjoy, and feel free to use this for your own projects!
 
 Warning: Current issue on mac where meta Kernel will not work. For fix, simply replace
