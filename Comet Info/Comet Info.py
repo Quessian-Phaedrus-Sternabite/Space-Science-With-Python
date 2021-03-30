@@ -53,6 +53,8 @@ name = ["PERIHELION_AU",
 
 # Creates some empty lists to store data, then appends all the data from it's respective DataFrame into a list. I
 # could've done this with pandas dataframe, but I am slightly inexperienced with it.
+#################################################################
+# This could of been done with a dictionary
 P_INFO = []
 C_INFO = []
 A_INFO = []
