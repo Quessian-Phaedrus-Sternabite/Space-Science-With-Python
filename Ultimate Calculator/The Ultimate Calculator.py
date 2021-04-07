@@ -202,12 +202,14 @@ def opcalc():
     # testing  -  5970000000000000000000000
     print("The orbital period is " + str(t) + "")
 
+
 def soicalc():
     a = float(input("Please input semimajor axis of the smaller bodies orbit: "))
     m = float(input("Please input mass of the smaller body: "))
     M = float(input("Please input mass of the larger body: "))
-    SOI = np.round(a * ((m / M) ** 2/5))
-    print(f"The Sphere of influence is: {SOI:f} metres.")
+    SOI = np.round(a * ((m / M) ** 2 / 5))
+    print(f"The Sphere of influence is: {SOI} metres.")
+
 
 if __name__ == "__main__":
     menu()
