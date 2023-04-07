@@ -148,6 +148,8 @@ def dcalc():
 
     print("This is the equivalent of %f kilotons of TNT." % Nuke)
 
+    lo=input("")
+
 
 def ocalc():
     ri = float(input("Enter radius of celestial body (kilometres please): "))
