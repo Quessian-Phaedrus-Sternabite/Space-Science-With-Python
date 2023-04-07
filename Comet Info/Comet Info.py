@@ -53,6 +53,8 @@ name = ["PERIHELION_AU",
 
 # Creates some empty lists to store data, then appends all the data from it's respective DataFrame into a list. I
 # could've done this with pandas dataframe, but I am slightly inexperienced with it.
+#################################################################
+# This could have been done with a dictionary - Asher S.
 P_INFO = []
 C_INFO = []
 A_INFO = []
@@ -110,7 +112,7 @@ conics = []
 computed_conics = []
 
 x = 0
-# Get the conics (state vector) of each comet.
+# Get the conics (state vector) of each comet. spiceypy.convrt() converts from AU to km. np.radians converts from degrees to radians. 
 while x <= 900:
     conics.extend([spiceypy.convrt(ALL_DF['PERIHELION_AU'].iloc[x], 'AU', 'km'),
                    ALL_DF['ECCENTRICITY'].iloc[x],
