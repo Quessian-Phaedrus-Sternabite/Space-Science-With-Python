@@ -11,7 +11,7 @@ from matplotlib import pyplot as plt
 # WARNING: This data may be slightly off compared to the example, due to differences in time.
 
 # Connect to the comet database. This database has been created in the last file
-# however, due to its small size the database is uploaded on GitHub
+# however, due to its large  size the database is uploaded on GitHub
 CON = sqlite3.connect('../_databases/_comets/mpc_comets.db')
 
 # Create a pandas dataframe that contains the aphelion and inclination data

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="" />
+    <list default="true" id="76188de8-4276-4d69-9c98-eb076c31d1d5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Visualiser/SV.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualiser/SV/SV.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualiser/Visualiser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualiser/comets.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualiser/comets/comets.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Visualiser/meta.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comet origins/Comet Origins.py" beforeDir="false" afterPath="$PROJECT_DIR$/Comet origins/Comet Origins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Visualiser.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,10 +46,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/kelle/OneDrive/Desktop/All programming/Default Venv"
+    "last_opened_file_path": "C:/Users/kelle/OneDrive/Desktop/All programming/Programming files/Space-Science-With-Python/Visualiser",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kelle\OneDrive\Desktop\All programming\Programming files\Space-Science-With-Python\Visualiser" />
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
+      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\_kernels\_misc" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python" />
@@ -47,12 +63,8 @@
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final" />
       <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space Science With Python Final\_kernels" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Programming files\Space-Science-With-Python\Space maps" />
-      <recent name="C:\Users\kelle\OneDrive\Desktop\Python Files\Space sciene with python final\_kernels\spk" />
-    </key>
   </component>
-  <component name="RunManager" selected="Python.Sky map">
+  <component name="RunManager" selected="Python.Visualiser (1)">
     <configuration name="Derive orbital elements" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -66,27 +78,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Derive orbital elements/Derive orbital elements.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Railgun Type 2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Railgun" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Python Files/Railgun" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Python Files/Railgun/Railgun Type 2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -116,27 +107,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Railgun" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Railgun" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Python Files/Railgun" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Python Files/Railgun/Railgun.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Sky map" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Space sciene with python final" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,6 +120,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sky maps/Sky map.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Visualiser (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Space sciene with python final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Visualiser" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualiser/Visualiser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Visualiser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Space sciene with python final" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualiser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Visualiser (1)" />
+        <item itemvalue="Python.Visualiser" />
         <item itemvalue="Python.Sky map" />
         <item itemvalue="Python.Derive orbital elements" />
         <item itemvalue="Python.Railgun Type 3" />
-        <item itemvalue="Python.Railgun Type 2" />
-        <item itemvalue="Python.Railgun" />
       </list>
     </recent_temporary>
   </component>
